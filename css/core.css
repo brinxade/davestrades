@@ -1,0 +1,254 @@
+body, html{margin:0;padding:0;font-family: 'Lato', sans-serif;overflow-x:hidden;}
+body{background:#fff;background-size:20% auto;color:#000;}
+
+#header{position:relative;color:#fff;background:#0d0d0d;z-index:5;background-size:20% auto;}
+#header .upper{padding:10px 20px 5px 20px;}
+#header .logo{margin-bottom:20px;position:relative;z-index:2;font-family: 'Spartan', sans-serif;}
+#header .logo h1{z-index:1;vertical-align:top;text-transform:uppercase;position:relative;top:5px;margin-bottom:10px;font-family:'Titillium Web', sans-serif;font-size:62px;margin-top:0;}
+#header .logo-img{position:absolute;z-index:3;left:0;top:5px;padding:20px;}
+#header .logo-img img{position:relative;display:inline-block;vertical-align:middle;max-width:120px;height:auto;margin-right:15px;border:2px solid #45b649;border-radius:50%;padding:5px;}
+#header .logo-img .porn-btn{display:inline-block;vertical-align:middle;padding:18px 15px 15px 15px;font-family:'Spartan',sans-serif;font-size:14px;font-weight:bold;text-transform:uppercase;
+border-radius:50px;background:#45b649;transition:all 0.3s;}
+#header .logo-img .porn-btn a{display:block;}
+#header .logo-img .porn-btn:hover{background:#0c5e11;}
+#header .logo .tagline{position:relative;left:-26px;margin-top:0;display:inline-block;max-width:700px;font-size:16px;}
+#header .logo .tagline span{position:absolute;right:-50px;top:-8px;display:block;background:red;border-radius:20px;padding:10px 8px 8px 8px;color:#fff;font-size:10px;
+text-transform:uppercase;}
+#mobile-nav-trigger{position:relative;font-family: 'Spartan', sans-serif;font-weight:bold;color:white;text-transform:uppercase;padding:18px 10px 15px 10px;border:none;
+outline:none;background:#45b649;transition:all 0.3s;font-size:12px;cursor:pointer;display:none;}
+#mobile-nav-trigger span{width:20px;height:20px;background:url(images/icons/mobile-nav.png);background-size:100% auto;display:block;}
+#header nav{position:relative;width:100%;background:#45b649;text-transform:uppercase;font-size:12px;padding-left:20px;}
+#header nav .nav-dd{display:inline-block;position:relative;}
+#header nav .nav-dd .nav-dd-trigger:hover{background:#0c5e11 !important;}
+#header nav .nav-dd:hover>.nav-dd-items{max-height:200px;}
+#header nav .nav-dd:hover> .nav-dd-trigger{background:#090 !important;}
+#header nav .nav-dd .nav-dd-items{position:absolute;top:57px;left:-3px;width:300px;max-height:0;transition:all 0.3s;overflow:hidden;}
+#header nav .nav-dd .nav-dd-items a{width:100%;text-align:left;display:block;}
+#header nav a{font-size:12px;margin-left:-3px;font-weight:bold;letter-spacing:1px;}
+#header nav a:not(:first-child){margin-left:-3px;}
+#header nav a.active{background:#0c5e11;}
+#hl-buttons .btn{margin-left:10px;text-align:right;}
+
+#header .upper .right{position:absolute;z-index:3;top:0;right:0;margin:30px 20px;}
+#header .upper .right .btn{display:inline-block;text-align:center;min-width:110px;font-family: 'Spartan', sans-serif;font-weight:bold;color:white;text-transform:uppercase;padding:18px 15px 15px 15px;border:none;
+outline:none;border-radius:5px;background:#45b649;transition:all 0.3s;font-size:12px;}
+#header .upper .right .btn:hover{background:#0c5e11;}
+
+/* Auth User Header UI */
+
+.auth-user-ui{padding:15px 0;}
+.auth-user-ui .user-pp{border-radius:100px 100px;width:80px;height:80px;background:#666;border:3px solid white;position:relative;z-index:5;overflow:hidden;cursor:pointer;}
+.auth-user-ui .user-pp img{position:relative;z-index:4;width:80px;height:auto;top:5px;left:-3px;}
+.auth-user-ui .content{display:none;position:absolute;top:110px;right:0;overflow:hidden;background:rgba(255,255,255,0.950);border-radius:10px;width:240px;min-height:100px;}
+.auth-user-ui .inner{position:relative;box-shadow:0px 0px 20px -5px rgba(0,0,0,0.3);}
+.auth-user-ui .auth-user-nav{list-style-type:none;text-align:left;}
+.auth-user-ui .auth-user-nav a{display:block;text-align:left;width:100%;padding:20px;color:black;cursor:pointer;}
+.auth-user-ui .auth-user-nav a .fas{margin-right:15px;}
+.auth-user-ui .auth-user-nav a:hover{background:rgba(0,0,0,0.050);}
+
+/* Main content Homepage */
+#home-main{display:none;}
+#home-main .inner{padding-bottom:80px;}
+#member-greeting{padding:100px 20px 20px 20px;color:black;}
+#member-greeting .jumbo-caption-large{color:#080;}
+#member-greeting .subtitle-small{color:#1aac23;margin-bottom:10px;}
+
+#member-assorted{margin-top:50px;}
+#member-assorted .item{padding:40px;background:#45b649;color:white;min-width:300px;max-width:400px;width:400px;min-height:400px;max-height:400px;
+display:inline-block;vertical-align:middle;margin:10px 50px;border-radius:20px;}
+#member-assorted .item .title{margin:0px 0px 10px 0px;text-align:left;font-family: 'Merriweather', serif;color:#fff;font-weight:200;}
+#member-assorted .item .sub-title{margin:0px 0px 20px 0px;text-align:left;font-family:'Titillium Web', sans-serif;letter-spacing:2px;font-weight:bold;font-size:16px;line-height:16px;}
+#member-assorted .item a{color:#fff;font-weight:bold;font-size:12px;text-transform:uppercase;font-family: 'Spartan', sans-serif;margin:7px 0;background:rgba(0,0,0,0.5);padding:15px 15px 10px 10px;border-radius:10px;
+transition:all 0.3s;display:block;}
+#member-assorted .item a:hover{background:rgba(0,0,0,0.7);}
+#member-assorted .item .content{margin-top:40px;}
+#trade-views{}
+#trade-views .view-count{font-size:100px;line-height:50px;}
+/* END Main Content*/
+
+/* Webpage Pictures */
+#sect-pictures .banner{border-bottom:5px solid #1aac23;/*box-shadow:0px 0px 100px 2px #1aac23;*/}
+#sect-pictures .banner img{max-width:100%;height:auto;}
+#sect-pictures .banner h1{color:white;text-align:center;font-size:60px;background:url('images/section-pictures/banner.jpg');padding:100px 0;margin:0;font-family: 'Merriweather', serif;letter-spacing:6px;}
+
+#photo-grid {line-height: 0;font-size:0;background:#444;}
+#photo-grid .photo-grid-inner{max-width:1300px;padding:50px 0;margin:0 auto;}
+#photo-grid img {position:relative;max-width: 500px !important;height: auto !important;transition:all 0.2s;}
+#photo-grid img:hover{transform:scale(1.1);z-index:10;}
+#photo-grid .picture-wrapper{position:relative;padding:20px;display:inline-block;}
+
+@media (max-width: 600px) {}
+}
+/* END Pictures */
+
+/* Webpage RockNRoll */
+#rocknroll-main{}
+#sect-rocknroll .banner{border-bottom:5px solid #45b649;box-shadow:0px 0px 100px 2px #45b649;font-size:0;}
+#sect-rocknroll .banner img{max-width:100%;height:auto;}
+#sect-rocknroll .banner .content{background:url('images/section-pictures/banner.jpg');padding:100px 0;}
+#sect-rocknroll .banner h1{color:white;text-align:center;font-size:70px;margin:0;font-family: 'Baumans', cursive;letter-spacing:6px;}
+#sect-rocknroll .banner h2{color:white;text-align:center;font-size:30px;margin:0;font-family: 'Merriweather', sans-serif;font-weight:light;letter-spacing:6px;}
+
+#song-search-request{margin-top:50px;}
+#song-search-request button{position:relative;top:0px;padding:16px;width:200px;font-size:18px;border-radius:8px;text-transform:uppercase;margin-left:20px;border:none;outline:none;color:white;background:#080;transition:all 0.3s;font-family:'Titillium Web', sans-serif;}
+#song-search-request button:hover{background:#070;}
+#song-search-request input{padding:16px;font-size:18px;width:450px;border-radius:8px;font-family:'Titillium Web', sans-serif;font-weight:bold;border:none;outline:none;background:rgba(255,255,255,0.9);box-shadow:inset 0px 0px 30px -10px rgba(0,0,0,0.5);}
+#song-search-request input::placeholder{color:#333;}
+#song-search-request input:focus{background:rgba(255,255,255,1);}
+#song-search-request .song-search{margin-bottom:20px;font-family:'Titillium Web', sans-serif;}
+#song-search-request .song-request{margin-bottom:20px;font-family:'Titillium Web', sans-serif;}
+
+#song-list-con{padding:140px 20px 120px 20px;background:url(images/section-rocknroll/banner.jpg);background-size:cover;}
+#song-list-con .inner{margin:0 auto;max-width:1000px;border-radius:10px;background:rgba(255,255,255,0.2);padding:20px;}
+#song-list{margin:70px 0 3px 0;overflow:hidden;border-radius:7px;width:100%;}
+#song-list, #song-list th, #song-list td {border-collapse: collapse;text-align:left;padding:20px;}
+#song-list .column-names{background:#45b649 !important;}
+#song-list th{text-transform:uppercase;padding-top:23px;font-size:14px;color:#fff;}
+#song-list tr{color:black;}
+#song-list tr:nth-child(odd){background:rgba(255,255,255,0.8);}
+#song-list tr:nth-child(even){background:rgba(255,255,255,0.7);}
+#song-list th:last-child{text-align:center;}
+#song-list tr td:last-child{text-align:center;}
+#song-list tr td{padding:0 20px;}
+#song-list tr td .audio{display:block;}
+#song-list .audio-download i{font-size:30px;transition:all 0.3s;color:#45b649;}
+#song-list .audio-download i:hover{color:#0a0;}
+/* END RockNRoll */
+
+/*WEBPAGE TOOLBOX */
+
+#toolbox-con{padding:140px 20px 120px 20px;background:url(images/backgrounds/bg-default.jpg);background-size:cover;background-attachment:fixed;}
+#toolbox-con .title{color:#080;}
+
+/* END */
+
+/*WEBPAGE CLASSIC CARS */
+
+#classiccars-con{padding:140px 20px 120px 20px;background:url(images/backgrounds/bg-default.jpg);background-size:cover;background-attachment:fixed;}
+#classiccars-con .title{color:#080;}
+
+/* END */
+
+/*WEBPAGE DAVES COOL STUFF */
+
+#coolstuff-con{padding:140px 20px 120px 20px;padding:110px 20px 100px 20px;background:url(images/backgrounds/bg-coolstuff.jpg);background-size:cover;background-attachment:fixed;}
+#coolstuff-con .title{color:#080;}
+
+/* END */
+
+/*WEBPAGE TRADES AND CONTRACTORS */
+
+#trades-and-contractors{padding:180px 20px 120px 20px;background:url(images/backgrounds/bg-trades-b.jpg);background-size:cover;}
+#trades-and-contractors .inner{position:relative;border-radius:20px;z-index:5;}
+#trades-and-contractors .btn-big{position:relative;min-width:500px;max-width:700px;text-align:center;border-radius:0px;z-index:1;font-size:30px;
+margin:0 0 70px 0;text-transform:uppercase;color:#fff;letter-spacing:1px;font-family:'Titillium Web', sans-serif;overflow:hidden;}
+#trades-and-contractors .btn-big a{position:relative;display:block;padding:40px;background:rgba(0,0,0,0.5);transition:all 0.3s;}
+#trades-and-contractors .btn-big a:hover{background:rgba(0,0,0,0.6);}
+#trades-and-contractors .btn-big .icon{font-size:80px;display:inline-block;vertical-align:middle;margin:0 20px;}
+#trades-and-contractors .btn-big .data{display:inline-block;vertical-align:middle;margin:0 20px;width:300px;text-align:center;}
+
+.trade-contract-ui{width:100%;}
+.trade-contract-ui .main{max-width:900px;margin:120px auto;padding:20px 40px;min-height:500px;background:#45b649;border-radius:10px;}
+.trade-contract-ui .main .jumbo-caption-large{color:white;font-family: 'Montserrat',sans-serif;margin:50px 0;}
+
+.trade-contract-ui .submit{padding:18px 20px 15px 20px;background:white;color:black;outline:none;border:none;border-radius:10px;font-size:16px;
+font-weight:bold;margin:40px 0;transition:all 0.3s;cursor:pointer;}
+.trade-contract-ui .submit:hover{background:#eee;}
+
+#tc-search{padding:15px 20px;width:100%;margin-top:-10px;font-weight:bold;border-bottom-left-radius:8px;border-bottom-right-radius:8px;border:none;outline:none;background:rgba(0,0,0,0.1);color:white;font-size:20px;box-shadow:inset 0px 0px 5px -5px rgba(0,0,0,0.3);display:none;}
+#tc-search:focus{box-shadow:inset 0px 0px 25px -10px rgba(0,0,0,0.3);}
+#tc-search::placeholder{color:#ddd;}
+
+/* END */
+
+/* WEBPAGE Poker */
+
+#poker-con{padding-bottom:60px;padding-top:60px;}
+#poker-con h1{color:#fff;}
+#prize-board-con{padding:40px 20px 40px 40px;}
+#player-list{padding:40px 40px 40px 20px;}
+.poker-con-inner{background:rgba(0,150,0,0.4);border-radius:10px;}
+#poker-con.inner{padding:40px;}
+
+/* END WEBPAGE Poker */
+
+/* Webpage About us */
+
+#about-us .inner{background:rgba(255,255,255,0.9);max-width:1000px;margin:120px auto;padding:40px;border-radius:10px;}
+
+/* END About us */
+
+/* Footer */
+footer{position:relative;width:100%;background:#0d0d0d;background-size:20% auto;color:#fff;padding:20px 20px 30px 20px;border-top:5px solid #45b649;}
+footer .footer-inner{padding:0 20px;margin:0 auto;margin-bottom:50px;}
+footer .footer-inner .footer-nav p{font-size:14px;color:#aaa;}
+footer .footer-logo{}
+footer .footer-logo .logo-img{max-width:230px;height:auto;padding:20px;}
+footer .footer-logo .logo-img, footer .footer-logo .logo-text{display:inline-block;vertical-align:top;}
+footer .footer-logo h3{margin-bottom:0;}
+footer .footer-logo span{color:#45b649;font-size:18px;}
+
+#sub-email{padding:12px 10px 10px 10px;border:none;margin:1px 10px 15px 0;outline:none;font-family:'Spartan', sans-serif;background:rgba(255,255,255,0.1);color:#FFF;font-size:16px;}
+#sub-email::placeholder{color:#888;}
+#sub-email:focus{background:rgba(255,255,255,0.150);}
+#sub-email-btn{background:#45b649;border:none;color:white;font-size:16px;padding:10px;border:1px solid transparent;outline:none;}
+#sub-email-btn:hover{background:#24A538;}
+#sub-status{font-size:16px;line-height:25px;color:white;margin:0;}
+
+.footer-items h4{color:#45b649;margin-bottom:20px;letter-spacing:1px;}
+.footer-items nav a{display:block;color:#AAA;padding:5px 0;font-family:'Spartan',sans-serif;font-size:16px;transition:all 0.3s;}
+.footer-items nav a:hover{color:#DDD;}
+
+footer .copyright{font-size:14px;color:#DDD;margin-top:30px;}
+/* END Footer */
+
+@media all and (min-width:1171px)
+{
+	#site-nav{display:block !important;height:auto;}
+}
+
+@media all and (max-width:1170px) /* MOB NAV ON */
+{	
+	#header nav{padding-left:0;display:none;}
+	#mobile-nav-trigger{display:block;}
+	#header nav a{font-size:12px;padding:18px 15px 15px 15px;margin:0;min-width:100%;}
+	
+	#header nav .nav-dd{width:100%;}
+	#header nav .nav-dd .nav-dd-items {top:47px;width:100%;}
+}
+
+@media all and (max-width:1000px)
+{
+	#header .logo-img{position:relative;display:block;text-align:center;padding-bottom:0px;}
+	#header .upper{vertical-align:middle;}
+	#header .logo{}
+	#header .logo h1{font-size:40px;}
+	#header .logo .tagline{display:none;}
+	
+	#header .upper .right{position:relative;}
+	#hl-buttons{text-align:center;}
+	#hl-buttons .btn{margin:0 5px;}
+	
+	#member-greeting{padding-top:70px;}
+	#member-assorted{margin-top:30px;}
+	
+	#footer .col-14{width:100%;}
+	#footer .col-34{width:100%;}
+}
+
+@media all and (max-width:800px)
+{
+	#footer .col-34 .footer-items{width:100%;}
+}
+
+@media all and (max-width:600px)
+{
+	.page-margin-1{max-width:100%;}
+	#member-assorted{width:100%;margin-top:15px;}
+	#member-assorted .item{margin-left:0;margin-right:0;width:100%;max-width:100%;margin-bottom:30px;height:auto;min-height:auto;}
+	
+	#trades-and-contractors .btn-big .icon{font-size:34px;}
+	#trades-and-contractors .btn-big .data{font-size:20px;width:200px;}
+	#trades-and-contractors .btn-big{min-width:300px;}
+	#trades-and-contractors .btn-big a{padding-left:10px;padding-right:10px;}
+}

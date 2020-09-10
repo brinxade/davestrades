@@ -1,0 +1,56 @@
+/* BLOG MAIN */
+
+#blog-container{padding:20px;}
+#blog-container .jumbo-caption-large{color:#080;}
+
+#blog-container .intro{padding-top:70px;margin-bottom:160px;width:1000px;max-width:1000px;min-width:400px;margin:0 auto;}
+
+#sidepanel{min-width:400px;}
+#sidepanel,#blog-data{padding:20px;}
+
+#sidepanel .content{border-radius:10px;background:white;}
+#blog-title-image{}
+#blog-title-image img{max-width:100%;width:100%;min-width:350px;height:auto;border-top-left-radius:10px;border-top-right-radius:10px;}
+#blog-info-header{padding:20px;max-width:350px;margin:-15px auto 0 auto;width:100%;}
+
+#blog-data .content{padding:20px;border-radius:10px;background: #fff;}
+
+#blog-featured-images{width:100%;padding:40px 0px;}
+#blog-featured-images .content{margin:0 auto;max-width:1600px;}
+#blog-featured-images .data-item{position:relative;border-radius:10px;z-index:5;margin:20px;display:inline-block;vertical-align:middle;overflow:hidden;}
+#blog-featured-images .content img{position:relative;z-index:3;max-width:440px;min-width:300px;height:auto;font-size:0;margin-bottom:-7px;}
+/* END */
+
+/* BLOG STYLES */
+
+.bstyles-clr-ltgreen{color:#0c5e11;}
+.bstyles-clr-mdgreen{color:#0B0;}
+.bstyles-clr-dkgreen{color:#050;}
+
+.heading-large{font-size:46px;font-weight:bold;}
+.heading-medium{font-size:38px;font-weight:bold;}
+.heading-small{font-size:26px;font-weight:400;}
+
+.font-g-large{font-size:20px;line-height:28px;}
+.font-g-medium{font-size:18px;line-height:28px;}
+.font-g-small{font-size:16px;line-height:28px;}
+
+.bstyles-para{font-family: 'Lato', sans-serif;}
+.bstyles-heading-a{font-family:'Montserrat',sans-serif;}
+.bstyles-heading-b{font-family:'Anton',sans-serif;}
+
+/* END BLOG STYLES */
+
+@media all and (max-width:1200px)
+{
+	#sidepanel, #blog-data{float:none;}
+}
+
+@media all and (max-width:500px)
+{
+	#blog-featured-images{padding-top:20px;}
+	#blog-featured-images .data-item{margin:0 0 20px 0;}
+	#blog-featured-images .content img{max-width:100%;}
+	#sidepanel, #blog-data{width:100%;max-width:100%;min-width:100%;padding:0;}
+	#blog-data{margin-top:20px;}
+}
