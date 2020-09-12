@@ -35,7 +35,7 @@ $(document).ready(function(){
 					}
 					else
 					{
-						$("#change-pass-status").css('color','red').text(response['status']).show();
+						$("#change-pass-status").css('color','white').text(response['status']).show();
 					}
 				}
 			});

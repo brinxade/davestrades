@@ -29,14 +29,13 @@ if(isset($_GET['ref-msg']))
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 		
+		<link rel="icon" type="image/png" href="favicon.png">
 		<title>Dave's Trades Account</title>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+		
 		<link rel="stylesheet" href="css/accounts.css" type="text/css"/>
 		<link rel="stylesheet" href="css/common.css" type="text/css"/>
-		
-		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="accounts-body">
 		<header align="center" id="header-mini">
@@ -119,5 +118,6 @@ if(isset($_GET['ref-msg']))
 			?>
 		</section>
 		<footer id="footer-mini" align="center"><span class="copyright">Designed by Brinxade &copy; 2020. All Rights Reserved.</span></footer>
+		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
 	</body>
 </html>

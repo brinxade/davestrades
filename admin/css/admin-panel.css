@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900&display=swap');
 
 body, html{padding:0;margin:0;}
-body{font-family: 'Open Sans', sans-serif;}
+body{font-family: 'Open Sans', sans-serif;background:url(images/bg1.jpg);background-size:cover;background-attachment:fixed;}
 
 *{box-sizing:border-box;}
 
@@ -14,7 +14,7 @@ p, span {font-family:'Open Sans', sans;}
 .subtitle-light{color:red;}
 
 /* INPUT STYLES 1 */
-.input-style-1[type=text],.input-style-1[type=password]{background:rgba(0,0,0,0.5);border:none;border-radius:8px;outline:none;color:white;max-width:300px;margin-left:auto;margin-right:auto;}
+.input-style-1[type=text],.input-style-1[type=password]{background:rgba(0,0,0,0.5);border:none;border-radius:5px;outline:none;color:white;max-width:350px;margin-left:auto;margin-right:auto;}
 .input-style-1[type=text]::placeholder,.input-style-1[type=password]::placeholder{color:#BBB;}
 .input-style-1[type=text]:focus,.input-style-1[type=password]:focus{background:rgba(0,0,0,0.7);}
 
@@ -22,17 +22,17 @@ p, span {font-family:'Open Sans', sans;}
 .input-style-1[type=radio]{width:20px;height:20px;padding:5px;position:relative;top:5px;}
 .input-file-style-1{background:rgba(255,255,255,0.6);border-radius:5px;border-color:transparent;padding:15px 10px;max-width:255px;}
 
-.input-textarea-1{border-radius:8px;border:none;outline:none;background:rgba(255,255,255,0.6);padding:10px;resize:none;width:450px;height:200px;}
+.input-textarea-1{border-radius:5px;font-size:16px;font-family:'Arial';border:none;outline:none;background:rgba(255,255,255,0.6);padding:15px 10px;resize:none;width:450px;height:200px;}
 .input-textarea-1:focus{background:rgba(255,255,255,0.8);}
 
-.btn-style-1{background:rgba(0,0,0,0.3);color:white;border:none;border-radius:10px;outline:none;transition:all 0.4s;cursor:pointer;margin:10px 10px 20px 0;font-size:18px;}
-.btn-style-1.active{background:rgba(0,0,0,0.5);box-shadow:0px 0px 30px -5px rgba(0,0,0,0.5);}
-.btn-style-1:hover{background:rgba(0,0,0,0.5);box-shadow:0px 0px 30px -5px rgba(0,0,0,0.5);}
+.btn-style-1{background:rgba(0,0,0,0.4);color:white;border:none;border-radius:5px;outline:none;transition:background 0.4s, color 0.4s;cursor:pointer;font-size:18px;}
+.btn-style-1.active{background:rgba(0,0,0,0.6);}
+.btn-style-1:hover{background:rgba(0,0,0,0.6);}
 
 
 
 /* INPUT STYLES 2 */
-.input-style-2[type=text],.input-style-2[type=password]{background:rgba(255,255,255,0.5);border:none;border-radius:8px;outline:none;color:black;max-width:300px;margin-left:auto;margin-right:auto;}
+.input-style-2[type=text],.input-style-2[type=password]{background:rgba(255,255,255,0.5);border:none;border-radius:5px;outline:none;color:black;max-width:300px;margin-left:auto;margin-right:auto;font-weight:normal;font-weight:normal;padding:15px 10px;}
 .input-style-2[type=text]::placeholder,.input-style-2[type=password]::placeholder{color:#BBB;}
 .input-style-2[type=text]:focus,.input-style-2[type=password]:focus{background:rgba(255,255,255,0.7);}
 
@@ -43,44 +43,49 @@ p, span {font-family:'Open Sans', sans;}
 .cms-de-table1{width:100%;}
 .cms-de-table1 td{padding:5px;}
 
-.cms-section{margin-top:50px;}
+.cms-section{}
 .cms-section-close{color:white;display:none;}
 
 .cms-cnt-tb1{margin-bottom:15px;}
 .cms-cnt-tb1 td{padding:10px;}
 
 .save-discard:after{content:'';clear:both;display:table;}
-.save-discard{margin-bottom:40px;}
+.save-discard{margin-bottom:20px;}
 
-#header{margin-bottom:0px;}
+#header{margin-bottom:50px;}
+.navbar-con{margin:0;}
 .header-utility{background: linear-gradient(to right, #42275a, #734b6d);}
+.header-utility button{margin-left:5px;margin-right:5px;}
+.header-utility button.active{border:1px solid #E8DAEF;}
 .header-utility button{cursor:pointer;}
 
 #admin-login-con{max-width:500px;margin:0 auto;}
-#admin-login{border-radius:10px;background: linear-gradient(to right, #42275a, #734b6d);color:white;margin-top:30px;}
+#admin-login{border-radius:10px;background: #4A235A;color:white;margin-top:30px;}
 #admin-login input, button{display:block;}
-#admin-login .status-text.bad,#admin-login .status-text.good{text-align:center;text-transform:uppercase;font-family:'Open Sans',sans-serif;}
-#admin-login .status-text.bad{color:red;}
+#admin-login .status-text,#admin-login .status-text.good{text-align:center;font-family:'Open Sans',sans-serif;margin:40px auto;font-size:18px;}
+#admin-login .status-text.bad{color:#fff;}
 #admin-login .status-text.good{color:#0f0;}
 
 #cms-sections{position:relative;}
-#cms-sections .content{color:white;}
-#cms-sections .content{background: linear-gradient(to right, #42275a, #734b6d);border-radius:8px;padding:20px;}
+#cms-sections .content{color:white;background: #4A235A;border-radius:8px;padding:50px 20px;}
+
+.se-container{color:white;background:#4A235A;}
+.se-form{}
 
 #cms-tutorial{display:none;}
-#cms-tutorial .content{max-width:900px;margin:0 auto;}
+#cms-tutorial .content{}
 #cms-tutorial .content .title{}
 #cms-tutorial .content .tut-title{font-size:30px;}
 
 #cms-change-password{position:relative;display:none;padding:20px 40px;}
-#cms-change-password .content{position:relative;max-width:900px;margin:0 auto;}
-#cms-change-pass-status{font-size:20px;}
+#cms-change-password .content{position:relative;}
+#cms-change-pass-status{font-size:20px;color:white;}
 
 #cms-blog-mgmt{display:none;position:relative;}
 #cms-blog-mgmt .content{position:relative;}
-#cms-blog-mgmt .table-wrap{position:relative;z-index:1;padding:0px;border-radius:20px;overflow:hidden;border:10px solid transparent;}
+#cms-blog-mgmt .table-wrap{position:relative;z-index:1;padding:0px;border-radius:10px;overflow:hidden;border:none;}
 
-#cms-section-editor{position:relative;max-width:1000px;padding:40px 40px;background:#AED6F1;margin:10px auto 20px auto;}
+#cms-section-editor{position:relative;max-width:1000px;padding:40px 40px;margin:10px auto 20px auto;border-radius:0px;}
 
 #blog-write-area{width:100%;background:#fff;outline:none;min-height:500px;font-size:16px;}
 
@@ -90,5 +95,5 @@ p, span {font-family:'Open Sans', sans;}
 #blog-list td:nth-child(6),#blog-list th:nth-child(6){width:110px;text-align:center;}
 
 
-#footer{margin-top:100px;}
-#footer .copyright{font-weight:bold;}
+#footer{margin-top:50px;}
+#footer .copyright{font-weight:normal;color:#fff;font-size:20px;}

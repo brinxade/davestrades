@@ -1,5 +1,5 @@
 <?php 
-require_once 'globals.php';
+require_once '_config.php';
 
 session_start();
 if(session_id()!='')

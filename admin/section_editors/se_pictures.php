@@ -39,23 +39,23 @@ if(isset($_GET['response']))
 		<link rel="stylesheet" type="text/css" href="../css/admin-panel.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/rex-set-1.css"/>
 	</head>
-	<body>
-		<header id="header">
+	<body class="bg-section-editor">
+		<header id="header" class="nm-bottom">
 			<div class="container-2" align="center">
 				<div>
-					<h1>Section Editor</h1>
+					<h1 class="nm-bottom">Section Editor</h1>
 					<span class="subtitle-light">PICTURES</span>
 					<a href="../cms.php"><button class="btn-style-1">CMS Home</button></a>
 				</div>
 			</div>
 		</header>
 		<?php echo $resp; ?>
-		<section id="cms-section-editor">
-			<form id="cms-sd-pictures" method="POST" enctype="multipart/form-data" action="s_pictures.php">
+		<section id="cms-section-editor" class="se-container container-1-tb">
+			<form id="cms-sd-pictures" class="se-form" method="POST" enctype="multipart/form-data" action="s_pictures.php">
 				<table class="cms-de-table1">
 					<tr>
 						<td><span>Image <b style="color:red;">*</b></span></td>
-						<td><input type="file" class="input-file-style-1" name="s_file" accept=".jpg, .png"/><br/><span>Only jpg and png allowed</span></td>
+						<td><input type="file" class="input-file-style-1 nm-bottom" name="s_file" accept=".jpg, .png"/><p>Only jpg and png allowed</span></p>
 					</tr>
 					<tr>
 						<td><span>Image Title <b style="color:red;">*</b></span></td>
@@ -73,7 +73,7 @@ if(isset($_GET['response']))
 						</td>
 					</tr>
 					<tr>
-						<td><button style="position:relative;top:15px;" class="btn-style-1" form="cms-sd-pictures" type="submit">Upload</button></td>
+						<td><button style="position:relative;top:15px;" class="btn-style-1 nm-left" form="cms-sd-pictures" type="submit">Upload</button></td>
 					</tr>
 				</table>
 			</form>

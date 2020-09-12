@@ -39,23 +39,23 @@ if(isset($_GET['response']))
 		<link rel="stylesheet" type="text/css" href="../css/admin-panel.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/rex-set-1.css"/>
 	</head>
-	<body>
-		<header id="header">
+	<body class="bg-section-editor">
+		<header id="header" class="nm-bottom">
 			<div class="container-2" align="center">
 				<div>
-					<h1>Section Editor</h1>
+					<h1 class="nm-bottom">Section Editor</h1>
 					<span class="subtitle-light">ROCKNROLL</span>
 					<a href="../cms.php"><button class="btn-style-1">CMS Home</button></a>
 				</div>
 			</div>
 		</header>
 		<?php echo $resp; ?>
-		<section id="cms-section-editor">
-			<form id="cms-sd-rocknroll" method="POST" enctype="multipart/form-data" action="s_rocknroll.php">
+		<section id="cms-section-editor" class="se-container container-1-tb">
+			<form id="cms-sd-rocknroll" class="se-form" method="POST" enctype="multipart/form-data" action="s_rocknroll.php">
 				<table class="cms-de-table1">
 					<tr>
 						<td><span>Song File <b style="color:red;">*</b></span></td>
-						<td><input type="file" class="input-file-style-1" name="s_file" accept=".mp3,audio/*"/><br/><span>Only mp3 and wav files allowed</span></td>
+						<td><input type="file" class="input-file-style-1 nm-bottom" name="s_file" accept=".mp3,audio/*"/><p>Only mp3 and wav files allowed</p></td>
 					</tr>
 					<tr>
 						<td><span>Song Name <b style="color:red;">*</b></span></td>
@@ -70,7 +70,7 @@ if(isset($_GET['response']))
 						<td><input class="input-style-2" type="text" name="s_tags"/></td>
 					</tr>
 					<tr>
-						<td><button style="position:relative;top:15px;" class="btn-style-1" form="cms-sd-rocknroll" type="submit">Upload</button></td>
+						<td><button style="position:relative;top:15px;" class="btn-style-1 nm-left" form="cms-sd-rocknroll" type="submit">Upload</button></td>
 					</tr>
 				</table>
 			</form>

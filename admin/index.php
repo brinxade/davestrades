@@ -7,6 +7,8 @@ if($user->is_admin==1)
 
 if(isset($_POST['admin-username']) && isset($_POST['admin-password']))
 	$user_auth_status=$user->admin_login($_POST['admin-username'],$_POST['admin-password']);
+else
+	$user_auth_status="<br/>";
 
 ?>
 <!DOCTYPE html>
@@ -22,7 +24,7 @@ if(isset($_POST['admin-username']) && isset($_POST['admin-password']))
 		<header id="header">
 			<div class="container-2" align="center">
 				<div>
-					<h1>Admin Panel</h1>
+					<h1 class="nm-bottom nm-top">Admin Panel</h1>
 					<span class="subtitle-light">Dave's Trades</span>
 				</div>
 			</div>
@@ -31,9 +33,9 @@ if(isset($_POST['admin-username']) && isset($_POST['admin-password']))
 			<form id="admin-login" class="container-2 shadow-smooth-1" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
 				<h2 class="title" align="center">Login</h2><br/>
 				<input id="admin-username" name="admin-username" class="input-style-1 col-11" type="text" autocomplete="off" spellcheck="off" placeholder="username"/>
-				<input id="admin-password" name="admin-password" class="input-style-1 col-11" type="password" placeholder="password"/><br/>
-				<button class="btn-style-1 margin-center" type="submit" form="admin-login">Login</button>
+				<input id="admin-password" name="admin-password" class="input-style-1 col-11" type="password" placeholder="password"/>
 				<?php echo $user_auth_status; ?>
+				<button class="btn-style-1 margin-center" type="submit" form="admin-login">Login</button>
 			</form>
 		</section>
 		<footer id="footer">

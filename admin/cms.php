@@ -30,10 +30,10 @@ $cms_sections='';
 		<link rel="stylesheet" type="text/css" href="css/rex-set-1.css"/>
 	</head>
 	<body>
-		<header id="header">
+		<header id="header navbar-con">
 			<div class="container-2" align="center">
 				<div>
-					<h2>Content Management System</h2>
+					<h2 class="nm-bottom nm-top">Content Management System</h2>
 					<span class="subtitle-light"><a href="../">Dave's Trades</a></span>
 				</div>
 			</div>
@@ -48,27 +48,24 @@ $cms_sections='';
 			</div>
 		</header>
 		<section id="cms-change-password" class="sect-layout-1 cms-section">
-			<div class="content">
+			<div class="content page-margin-large container-1">
 				<span class="close-a cms-section-close" data-target="cms-change-password"><i class="fas fa-times"></i></span>
-				<h3>Change Password</h3>
+				<h2>Change Password</h2>
 				<br/>
-				<div style="margin-left:10px;">
-					<label style="min-width:200px;display:inline-block;">Current Password</label>
+				<div>
 					<input type="password" id="current-password" class="input-style-1" placeholder="Current Password"/><br/>
-					<label style="min-width:200px;display:inline-block;">New Password</label>
 					<input type="password"  id="new-password" class="input-style-1" placeholder="New Password"/><br/>
-					<label style="min-width:200px;display:inline-block;">Confirm New Password</label>
-					<input type="password"  id="new-cpassword" class="input-style-1" placeholder="Type New Password again"/><br/><br/>
+					<input type="password"  id="new-cpassword" class="input-style-1" placeholder="Type New Password again"/>
 				</div>
-				<p id="change-pass-status" style="margin-left:10px;display:none;"><br/></p>
-				<button id="btn-change-pass" class="btn-style-1 nm-all" style="position:relative;left:10px;">Confirm</button><br/>
+				<p id="change-pass-status" style="margin:20px 0;display:none;"><br/><br/></p>
+				<button id="btn-change-pass" class="btn-style-1 nm-left nm-right nm-bottom">Confirm</button><br/>
 			</div>
 		</section>
 		<section id="cms-tutorial" class="sect-layout-1 cms-section">
-			<div class="content"></div>
+			<div class="content page-margin-large"></div>
 		</section>
 		<section id="cms-sections" class="container-3 cms-section">
-			<div class="content shadow-smooth-1 container-3">
+			<div class="content page-margin-large">
 				<h3 align="center" style="color:white;">Sections</h3>
 				<ul class="list-vertical-a" align="center">
 					<a href="section_editors/se_rocknroll.php"><li class="round-list-item round-list-item-inline">RockNRoll</li></a>
@@ -84,7 +81,7 @@ $cms_sections='';
 					<span class="spacer-large"></span>
 					<div class="utilities col">
 						<input type="text" id="blog-search" class="input-style-1 _left" placeholder="Search Blogs"/>
-						<button class="btn-style-1 _right">
+						<button class="btn-style-1 _right nm-right">
 							<i class="fas fa-plus-square"></i>&nbsp; Create
 						</button>
 					</div>
@@ -113,7 +110,7 @@ $cms_sections='';
 					<span class="spacer-large"></span>
 					<h2 class="mgmt-mode">Edit</h2>
 					<div class="save-discard">
-						<button id="blog-edit-cancel" class="btn-style-1 _left"><i class="fas fa-ban"></i> Cancel</button>
+						<button id="blog-edit-cancel" class="btn-style-1 _left margin-right-small"><i class="fas fa-ban"></i> Cancel</button>
 						<button id="blog-edit-save" class="btn-style-1 _left"><i class="fas fa-check"></i> Save</button>
 					</div>
 					<div id="blog-toolbar"></div>

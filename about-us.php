@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 		
+		<link rel="icon" type="image/png" href="favicon.png">
 		<title>About Dave&apos;s Trades</title>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,8 +20,6 @@
 		<link rel="stylesheet" type="text/css" href="css/core.css"/>
 		<link rel="stylesheet" type="text/css" href="css/blog.css"/>
 		<link rel="stylesheet" type="text/css" href="css/global-styles.css"/>
-		
-		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="body-default">
 		<header id="header"></header>
@@ -63,5 +62,6 @@
 			</div>
 		</section>
 		<footer id="footer"></footer>
+		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
 	</body>
 </html>

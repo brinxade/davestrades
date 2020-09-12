@@ -99,6 +99,6 @@ else
 	array_push($response['error'],"Fill in all required fields");
 }
 
-header("Location: se_rocknroll.php?response=".$response['success']."&error=".json_encode($response['error'][0]));
+header("Location: se_rocknroll.php?response=".$response['success']."&error=".$response['error'][0]);
 
 ?>
