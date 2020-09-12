@@ -9,23 +9,23 @@ class Database
 	private static $DB_USERNAME=DB_USERNAME;
 	private static $DB_PASSWORD=DB_PASSWORD;
 	
-	public static $conn;
+	public $conn;
 
 	function __construct()
 	{
-		$this::$conn=new mysqli($this::$DB_HOST, $this::$DB_USERNAME, $this::$DB_PASSWORD, $this::$DB_NAME) or die("Database connection failed.");
+		$this->conn=new mysqli($this::$DB_HOST, $this::$DB_USERNAME, $this::$DB_PASSWORD, $this::$DB_NAME) or die("Database connection failed.");
 	}
 	
 	function execute_query($q)
 	{
-		$result=$this::$conn->query($q);
+		$result=$this->conn->query($q);
 		return $result; 
 	}
 	
-	function __destruct()
+	function close()
 	{
-		if($this::$conn)
-			$this::$conn->close();
+		if($this->conn)
+			$this->conn->close();
 	}
 }
 

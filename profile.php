@@ -37,7 +37,7 @@ if($user->is_logged_in!=1)
 		<header id="header"></header>
 		<section id="profile-management">
 			<div class="inner">
-				<h1 class="jumbo-caption-large">Profile Management</h1>
+				<h1 class="title jumbo-caption-large">Profile</h1>
 				<div class="content">
 					<div class="section">
 						<div id="profile-picture" class="inline-block v-align-top">
@@ -49,20 +49,20 @@ if($user->is_logged_in!=1)
 								<button class="edit"><i class="fas fa-trash"></i></button>
 							</div>
 						</div>
-						<div id="profile-identity" class="inline-block v-align-top">
-							<div class="data-item">
-								<strong class="stat-name">Name </strong/><input class="if-edit-s1" id="user-name" type="text" value="" disabled/>
+						<div class="stat-group">
+							<div class="if-editable">
+								<strong class="stat-name">Name <span class="sep">|</span></strong/><input class="if-edit-s1" id="user-name" type="text" value="" disabled/>
 								<span class="span-edit" data-target="user-name"><i class="fas fa-pen"></i></span>
 							</div>
-							<div class="data-item">
-								<strong class="stat-name">Trade </strong/><input class="if-edit-s1" id="user-trade" type="text" value="" disabled/>
+							<div class="if-editable">
+								<strong class="stat-name">Trade <span class="sep">|</span></strong/><input class="if-edit-s1" id="user-trade" type="text" value="" disabled/>
 								<span class="span-edit" data-target="user-trade"><i class="fas fa-pen"></i></span>
 							</div>
 						</div>
 					</div>
 					<div id="profile-description" class="section">
 						<textarea id="user-desc" style="resize:none;" placeholder="A description of your profile" disabled></textarea>
-						<div class="data-item" style="left:12px;">
+						<div class="if-editable" style="left:12px;">
 							<span class="span-edit" data-target="user-desc"><i class="fas fa-pen"></i></span>
 						</div>
 					</div>
@@ -73,7 +73,7 @@ if($user->is_logged_in!=1)
 					<div>
 						<p class="label">Expose profile as a trade</p>
 						<label class="toggle-switch">
-							<input type="checkbox">
+							<input id="user-trademode" type="checkbox">
 							<span class="slider round"></span>
 						</label>
 					</div>

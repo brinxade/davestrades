@@ -69,5 +69,10 @@ class AccountActivation
 			$this->direct_to_target(0);
 		}
 	}
+	
+	function __destruct()
+	{
+		$this->db->close();
+	}
 }
 ?>

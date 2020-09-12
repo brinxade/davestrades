@@ -16,6 +16,7 @@ class User
 	private $db_connection;
 	private $auth_token;
 	private $target_uri="/";
+	public $user_id;
 	
 	function __construct()
 	{
@@ -24,6 +25,7 @@ class User
 		
 		$this->set_login_status();
 		$this->connect();
+		$this->get_user_id();
 	}
 	
 	function connect()
@@ -31,7 +33,16 @@ class User
 		$this->db_connection=new Database();
 		return $this->db_connection;
 	}
-	
+
+	function get_user_id()
+	{
+		if(!empty($_SESSION['user-id']))
+			$this->user_id=$_SESSION['user-id'];
+		else
+			$this->user_id="";
+		return $this->user_id;
+	}
+
 	function set_login_status()
 	{
 		if(isset($_SESSION['user-logged-in']) && isset($_SESSION['user-auth-token']))
@@ -66,12 +77,14 @@ class User
 		
 		if($result->num_rows==1)
 		{	
-			if($result->fetch_assoc()['is_active']=="1")
+			$row=$result->fetch_assoc();
+			if($row['is_active']=="1")
 			{
 				if($token=$this->gen_session_token($username))
 				{
 					$_SESSION['user-auth-token']=$token;
 					$_SESSION['user-logged-in']=1;
+					$_SESSION['user-id']=$row['uid'];
 					
 					$this->auth_token=$token;
 					$this->set_login_status();
@@ -304,7 +317,7 @@ class User
 	
 	function __destruct()
 	{
-		$this->db_connection=null;
+		$this->db_connection->close();
 	}
 }
 

@@ -19,6 +19,10 @@ DEFINE('INC_ROCKNROLL',$_SERVER['DOCUMENT_ROOT']."/appcore/framework/includes/ro
 DEFINE('STG_PICTURES',BASE_STORAGE."pictures/");
 DEFINE('STG_ROCKNROLL',BASE_STORAGE."rocknroll/songs/");
 
-//AUTH HANDLER
+//HANDLERS
 DEFINE('APP_CLIENT_HANDLER',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/account_management/user.php');
+DEFINE('APP_REQ_HANDLER',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/request_handler.php');
+
+DEFINE('RH_PROFILE_DATA',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/account_management/rh_profiledata.php');
+
 ?>

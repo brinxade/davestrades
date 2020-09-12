@@ -127,7 +127,7 @@ outline:none;background:#fff;transition:all 0.3s;font-size:14px;color:#000;font-
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #fff;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -139,13 +139,13 @@ outline:none;background:#fff;transition:all 0.3s;font-size:14px;color:#000;font-
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #000;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #fff;
 }
 
 input:focus + .slider {
@@ -156,6 +156,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background:#196F3D;
 }
 
 /* Rounded sliders */
