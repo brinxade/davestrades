@@ -51,29 +51,33 @@ if($user->is_logged_in!=1)
 						</div>
 						<div class="stat-group">
 							<div class="if-editable">
-								<strong class="stat-name">Name <span class="sep">|</span></strong/><input class="if-edit-s1" id="user-name" type="text" value="" disabled/>
+								<span class="stat-name fixed-width">Name</span></span><input data-rd-target="0" class="data-rd if-edit-s1" id="user-name" type="text" value="" disabled/>
 								<span class="span-edit" data-target="user-name"><i class="fas fa-pen"></i></span>
 							</div>
 							<div class="if-editable">
-								<strong class="stat-name">Trade <span class="sep">|</span></strong/><input class="if-edit-s1" id="user-trade" type="text" value="" disabled/>
+								<span class="stat-name fixed-width">Trade</span></span><input data-rd-target="1" class="data-rd if-edit-s1" id="user-trade" type="text" value="" disabled/>
 								<span class="span-edit" data-target="user-trade"><i class="fas fa-pen"></i></span>
+							</div>
+							<div class="if-editable">
+								<span class="stat-name"><i class="icon fas fa-phone"></i></span><input data-rd-target="3" class="data-rd if-edit-s1" id="user-phone" type="text" value="" disabled/>
+								<span class="span-edit" data-target="user-phone"><i class="fas fa-pen"></i></span>
+							</div>
+							<div class="if-editable">
+								<span class="stat-name"><i class="icon fas fa-map-marker-alt"></i></span><input data-rd-target="4" class="data-rd if-edit-s1" id="user-addr" type="text" value="" disabled/>
+								<span class="span-edit" data-target="user-addr"><i class="fas fa-pen"></i></span>
 							</div>
 						</div>
 					</div>
 					<div id="profile-description" class="section">
-						<textarea id="user-desc" style="resize:none;" placeholder="A description of your profile" disabled></textarea>
-						<div class="if-editable" style="left:12px;">
+						<div class="if-editable if-editable-textarea">
+							<textarea class="data-rd" data-rd-target="2" id="user-desc" style="resize:none;" placeholder="A description of your profile" disabled></textarea>
 							<span class="span-edit" data-target="user-desc"><i class="fas fa-pen"></i></span>
 						</div>
-					</div>
-					<div id="profile-data" class="section">
-						<span class="info-span-a"><i class="fas fa-phone"></i>&nbsp;&nbsp;<span id="user-phone">Not Set</span></span>
-						<span class="info-span-a"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;<span id="user-addr">Not Set</span></span>
 					</div>
 					<div>
 						<p class="label">Expose profile as a trade</p>
 						<label class="toggle-switch">
-							<input id="user-trademode" type="checkbox">
+							<input class="data-rd-clk" data-rd-target="5" id="user-trademode" type="checkbox" value="1">
 							<span class="slider round"></span>
 						</label>
 					</div>

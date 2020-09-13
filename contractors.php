@@ -24,8 +24,7 @@
 	<body>
 		<header id="header"></header>
 		<section id="trades-and-contractors">
-			<div class="inner" align="center">
-				<div id="goto-post-trade" class="btn-big"><a href="post/"><span class="icon"><i class="fas fa-file-alt"></i></span><span class="data">Post A Trade</span></a></div>
+			<div class="inner">
 				<div id="find-contractors" class="btn-big"><a href="#"><span class="icon"><i class="fas fa-search"></i></span><span class="data">Search Contractors</span></a></div>
 			</div>
 		</section>

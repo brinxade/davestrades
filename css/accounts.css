@@ -67,17 +67,21 @@ box-shadow:0px 0px 20px -5px rgba(0,0,0,0.25);}
 
 #profile-management .title{margin:30px 0;}
 #profile-management .stat-group{margin:30px 0;max-width:340px;}
-#profile-management .if-editable{position:relative;border-radius:100px;background:#fff;color:#000;padding:20px 20px;min-width:300px;margin-bottom:10px;}
-#profile-management .if-editable .stat-name{width:50px;text-align:left;color:#45b649;}
-#profile-management .if-editable .stat-name .sep{vertical-align: top;margin:0 10px;color:#bbb;}
+#profile-management .if-editable{position:relative;border-radius:10px;background:#fff;color:#000;padding:20px 20px;min-width:300px;margin-bottom:10px;}
+#profile-management .if-editable.if-editable-textarea{padding:20px;}
+#profile-management .if-editable.round{border-radius:100px;}
+#profile-management .if-editable.round > .span-edit{border-radius:100%;}
+#profile-management .if-editable .stat-name{position:relative;display:inline-block;text-align:left;color:#45b649;font-weight:bold;}
+#profile-management .if-editable .stat-name.fixed-width{width:55px;padding-right:10px;margin-right:10px;border-right:2px solid gray;}
+#profile-management .if-editable .stat-name .icon{padding-right:10px;}
 #profile-management .if-editable:hover>.span-edit{background:rgba(0,0,0,0.1);}
-#profile-management .if-editable .span-edit{position:absolute;right:4px;background:rgba(0,0,0,0.070);top:3px;cursor:pointer;color:#333;font-size:22px;padding:14px;border-radius:100%;width:55px;height:55px;}
+#profile-management .if-editable .span-edit{position:absolute;right:10px;background:rgba(0,0,0,0.070);top:10px;cursor:pointer;color:#333;font-size:18px;padding:8px;border-radius:10px;width:40px;height:40px;}
 #profile-management .if-editable .span-edit .fas{position:relative;left:3px;top:1px;color:#45b649;}
 #profile-management .if-editable .span-edit.active{background:rgba(0,255,0,0.150);}
 #profile-management .if-editable .span-edit.active:hover{background:rgba(0,255,0,0.200);}
 #profile-management .if-editable .span-edit:hover{cursor:pointer;background:rgba(0,0,0,0.1);}
 #profile-management .if-editable .if-edit-s1{font-family:'Lato',sans-serif;font-size:16px;color:black;margin:0 0;outline:0;border:0;background:transparent;}
-#user-desc{width:100%;font-size:16px;overflow-x:hidden;min-height:30px;height:200px;margin:0;color:black;background:transparent;font-family:'Lato',sans-serif;}
+#user-desc{width:100%;font-size:16px;overflow-x:hidden;min-height:30px;height:200px;margin:0;color:black;background:transparent;font-family:'Lato',sans-serif;padding:0;border-radius:0;}
 .user-pp-edit{position:absolute;bottom:12px;left:10px;}
 .user-pp-edit .edit{width:50px;height:50px;background:rgba(0,0,0,0.2);color:white;margin-right:5px;border-radius:5px;font-weight:400;font-size:18px;outline:none;border:none;font-family:'Titillium Web', sans-serif;cursor:pointer;}
 .user-pp-edit .edit:hover{background:rgba(0,0,0,0.3);}
@@ -85,7 +89,7 @@ box-shadow:0px 0px 20px -5px rgba(0,0,0,0.25);}
 #profile-picture{position:relative;}
 #user-new-pp-i{visibility:hidden;height:1px;width:1px;}
 
-#profile-description{border-radius:10px;background:white;padding:15px 15px;color:black;}
+#profile-description{border-radius:10px;background:white;color:black;}
 
 
 @media all and (max-width:550px)

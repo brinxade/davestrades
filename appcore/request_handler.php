@@ -2,7 +2,6 @@
 
 require_once 'CONFIG.php';
 require_once APP_CLIENT_HANDLER;
-require_once RH_PROFILE_DATA;
 require_once DB_HANDLER;
 
 if(!empty($_POST['_request']))
@@ -13,7 +12,8 @@ else
 class RequestHandler
 {
     private static $_requests_=array(
-        'gProfileData'=>array('id'=>'gProfileData','name'=>'Get Profile Data','authType'=>0)
+        'gProfileData'=>array('id'=>'gProfileData','name'=>'Get Profile Data','authType'=>1),
+        'pProfileData'=>array('id'=>'pProfileData','name'=>'Update Profile Data','authType'=>1)
     );
 
     private $_response=['response'=>'','ok'=>'1','data'=>'','errors'=>array()];
@@ -21,6 +21,10 @@ class RequestHandler
     function __construct($_r)
     {
         $_request=$_r;
+        if(!empty($_POST['_data']))
+            $this::$_requests_[$_request]['data']=$_POST['_data'];
+        else
+            $this::$_requests_[$_request]['data']=NULL;
 
         if(array_key_exists($_request, $this::$_requests_))
         {
@@ -58,8 +62,18 @@ class RequestHandler
         switch($_r['id'])
         {
             case 'gProfileData':
+                require_once RH_PROFILE_DATA;
                 $this->_response=r_getProfileData($this->_response);
                 break;
+
+            case 'pProfileData':
+                require_once RH_PROFILE_DATA;
+                if(!is_null($this::$_requests_['pProfileData']['data']))
+                    $this->_response=r_updateProfileData($this->_response, $this::$_requests_['pProfileData']['data']);
+                else
+                $this->_response['response']="No changes to be made";
+                break;
+
             default:
                 $this->_response['response']="Request is currently not supported";
                 array_push($this->_response['errors'],"Request is currently not supported");

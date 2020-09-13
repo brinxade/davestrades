@@ -52,7 +52,6 @@ class GlobalFooter extends React.Component
 				<div className="col-34 col _right footer-nav">
 					<div className="col-13 _left footer-items" align="left"><h4>Quicklinks</h4>
 						<nav>
-							<a href={directory+"post/"}>Post your Page</a>
 							<a href={directory+"poker.php"}>Poker Tournaments</a>
 						</nav>
 					</div>

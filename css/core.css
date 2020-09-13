@@ -145,7 +145,7 @@ transition:all 0.3s;display:block;}
 
 
 /*WEBPAGE TRADES AND CONTRACTORS */
-#trades-and-contractors{padding:50px 20px 100px 20px;background:url(images/backgrounds/bg-trades-b.jpg);background-size:cover;}
+#trades-and-contractors{padding:160px 20px 100px 20px;background:url(images/backgrounds/bg-trades-b.jpg);background-size:cover;}
 #trades-and-contractors .inner{position:relative;border-radius:20px;z-index:5;}
 #trades-and-contractors .btn-big{position:relative;min-width:500px;max-width:700px;text-align:center;border-radius:0px;z-index:1;font-size:30px;
 margin:0 0 70px 0;text-transform:uppercase;color:#fff;letter-spacing:1px;font-family:'Titillium Web', sans-serif;overflow:hidden;}
