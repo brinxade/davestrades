@@ -24,16 +24,26 @@
 	</head>
 	<body>
 		<header id="header"></header>
-		<section id="contractors">
-			<div class="inner">
-				<p class="intro-text nm-bottom">Looking to get some job done?</p>
+		<section class="tc-search-ui">
+			<div class="inner contractors">
+				<p class="intro-text nm-bottom">Looking to get a job done?</p>
 				<h1 class="title">Find Contractors</h1>
 				<div class="search">
-					<input id="contractors-search" type="text" placeholder="Search Contractors by Name, Location or Trade"/>
+					<input class="search-field contractors-search" type="text" placeholder="Search Contractors by Name, Location or Trade"/>
 					<button class="search-button">Search</button>
 					<div class="loader loader-medium loader-round-green m-center loader-hidden" style="margin:50px auto 0 auto;"></div>
 				</div>
-				<div id="contractors-search-result"></div>
+				<div id="contractors-search-result" class="search-result"></div>
+			</div>
+			<div class="inner trades">
+				<p class="intro-text nm-bottom">Muscle for hire</p>
+				<h1 class="title">Find Trades</h1>
+				<div class="search">
+					<input class="search-field trades-search" type="text" placeholder="Search Trades by Name, Location or Trade"/>
+					<button class="search-button">Search</button>
+					<div class="loader loader-medium loader-round-green m-center loader-hidden" style="margin:50px auto 0 auto;"></div>
+				</div>
+				<div id="trades-search-result" class="search-result"></div>
 			</div>
 		</section>
 		<footer id="footer"></footer>

@@ -14,7 +14,7 @@ class RequestHandler
     private static $_requests_=array(
         'gProfileData'=>array('id'=>'gProfileData','name'=>'Get Profile Data','authType'=>1),
         'pProfileData'=>array('id'=>'pProfileData','name'=>'Update Profile Data','authType'=>1),
-		'gContractors'=>array('id'=>'gContractors','name'=>'Find Contractors','authType'=>0)
+		'gTradesContractors'=>array('id'=>'gTradesContractors','name'=>'Find Trades and Contractors','authType'=>0)
     );
 
     private $_response=['response'=>'','ok'=>'1','data'=>'','errors'=>array()];
@@ -75,10 +75,10 @@ class RequestHandler
                 $this->_response['response']="No changes to be made";
                 break;
 
-            case 'gContractors':
+            case 'gTradesContractors':
                 require_once RH_SEARCH;
-                if(!is_null($this::$_requests_['gContractors']['data']))
-                    $this->_response=r_searchContractors($this->_response, $this::$_requests_['gContractors']['data']);
+                if(!is_null($this::$_requests_['gTradesContractors']['data']))
+                    $this->_response=r_searchContractors($this->_response, $this::$_requests_['gTradesContractors']['data']);
                 else
                     $this->_response['response']="Search query empty";
                 break;

@@ -16,7 +16,8 @@ function r_getProfileData($response)
             'description'=>$data['data_description'],
             'phone'=>$data['data_phone'],
             'address'=>$data['data_address'],
-            's_tradeExpose'=>$data['s_expose_as_trade']
+            's_tradeExpose'=>$data['s_expose_as_trade'],
+            's_contractorExpose'=>$data['s_expose_as_contractor']
         );
         $response['response']="Profile Data Retrieved";
     }
@@ -44,7 +45,8 @@ function r_updateProfileData($response, $data)
         2=>"data_description",
         3=>"data_phone",
         4=>"data_address",
-        5=>"s_expose_as_trade"
+        5=>"s_expose_as_trade",
+        6=>"s_expose_as_contractor"
     );
     
     if(key_exists($data['target'], $targets))

@@ -34,6 +34,8 @@ $(document).ready(function(){
 
 					if(response['data']['s_tradeExpose']==1)
 						$("#user-trademode").prop('checked','true');
+					if(response['data']['s_contractorExpose']==1)
+						$("#user-contractormode").prop('checked','true');
 				}
 				else
 				{
@@ -95,6 +97,7 @@ $(document).ready(function(){
 			data:{_request:'pProfileData',_data:JSON.stringify(data)},
 			success:function(response)
 			{				
+				console.log(response);
 				if(response['ok']!=1)
 				{
 					console.log("Failed to update profile data");

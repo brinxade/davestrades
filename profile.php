@@ -80,6 +80,11 @@ if($user->is_logged_in!=1)
 							<input class="data-rd-clk" data-rd-target="5" id="user-trademode" type="checkbox" value="1">
 							<span class="slider round"></span>
 						</label>
+						<p class="label">Expose profile as a contractor</p>
+						<label class="toggle-switch">
+							<input class="data-rd-clk" data-rd-target="6" id="user-contractormode" type="checkbox" value="1">
+							<span class="slider round"></span>
+						</label>
 					</div>
 				</div>
 			</div>

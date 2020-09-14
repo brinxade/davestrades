@@ -32,9 +32,16 @@ class AccountActivation
 			{
 				$user_id=$result->fetch_assoc()['user_id'];
 				if($db->execute_query("UPDATE `user_accounts` SET `is_active`=1 WHERE `uid`=".$user_id))
-					$this->direct_to_target(1);
+				{
+					if($db->execute_query("INSERT INTO `user_profiles`(`uid`) VALUES ($user_id)"))
+						$this->direct_to_target(1);
+					else
+						$this->direct_to_target(0);
+				}
 				else
+				{
 					$this->direct_to_target(0);
+				}
 			}
 			else
 			{
