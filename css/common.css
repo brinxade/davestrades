@@ -43,6 +43,8 @@ h6{font-size:18px;}
 .v-align-center{vertical-align:middle;}
 .v-align-top{vertical-align:top;}
 
+.m-center{margin-left:auto;margin-right:auto;}
+
 .caption{color:#333;}
 .subtitle-small{margin:10px 0;font-size:20px;}
 .jumbo-caption-small{font-size:30px;}
@@ -74,12 +76,12 @@ h6{font-size:18px;}
 .modal-center{position:fixed;top:50%;left:50%;transform:translateX(-50%) translateY(-80%);}
 .modal-1{display:none;min-width:600px;text-align:center;padding:80px 20px;margin:0 auto;background:rgba(0,150,0,0.9);color:white;font-size:22px;}
 
-.loader-container{display:none;position:absolute;left:50%;top:50%;transform:translateX(-59%) translateY(-59%);z-index:10;}
-.loader-wrapper{width:100px;height:100px;padding:20px;border-radius:10px;overflow:hidden;}
-.loader{max-width:100%;height:auto;border-radius:20px;}
-
-.loader-small{width:30px;height:30px;position:relative;padding:5px;}
+.loader{position:relative;}
+.loader-small{position:relative;width:30px;height:30px;padding:5px;}
+.loader-medium{position:relative;width:50px;height:50px;margin:20px auto;}
 .loader-1{background:url(images/loaders/loader-dots-green.gif);background-size:100% 100%;}
+.loader-round-green{background:url(images/loaders/loader-round-green.gif);background-size:100% 100%;}
+.loader-hidden{display:none;}
 
 .inputf-style2{font-family: 'Lato', sans-serif !important;width:70%;max-width:100%;min-width:200px;padding:20px;font-size:18px;border:unset;outline:none;border-radius:50px;
 border:2px solid #080;margin:15px auto;transition:all 0.3s;color:#888;font-weight:bold;}

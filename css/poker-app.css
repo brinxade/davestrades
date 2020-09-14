@@ -6,7 +6,7 @@
 #app{position:relative;background:url(images/backgrounds/bg-poker-app.jpg);background-size:cover;}
 #app .main{position:relative;width:65%;z-index:4;}
 #app .sidepanel{width:35%;padding-left:70px;position:relative;}
-#app .sidepanel .inner{background:url(images/seamless-fabric-alt.jpg);background-size:20% auto;padding:50px 30px;border-radius:20px;}
+#app .sidepanel .inner{background:#000;background-size:20% auto;padding:50px 30px;border-radius:20px;}
 #app .sidepanel .chat, #app .sidepanel .control-panel{max-width:400px;}
 #app .sidepanel .chat{padding:30px;}
 #app .sidepanel .inner:not(:first-child){margin-top:20px;}

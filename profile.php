@@ -5,7 +5,7 @@ require_once APP_CLIENT_HANDLER;
 $user=new User();
 if($user->is_logged_in!=1)
 {
-	$user->direct_user('/account.php?login&past='.$_SERVER['PHP_SELF']);
+	$user->direct_user('/account.php?login&past='.$_SERVER['PHP_SELF']."?".$_SERVER["QUERY_STRING"]);
 }
 ?>
 <!DOCTYPE html>
@@ -25,6 +25,7 @@ if($user->is_logged_in!=1)
 		<script src="js/react-components/GlobalFooter.js" type="text/babel"></script>
 		<script src="js/react-controller/base-controller.js" type="text/babel"></script>
 		<script src="js/common.js"></script>
+		<script src="js/api_handles/profile-edit.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="css/core.css"/>
 		<link rel="stylesheet" type="text/css" href="css/poker-app.css"/>
@@ -41,7 +42,6 @@ if($user->is_logged_in!=1)
 				<div class="content">
 					<div class="section">
 						<div id="profile-picture" class="inline-block v-align-top">
-							<div class="loader-container"><div class="loader-wrapper"><img class="loader" src="/css/images/loaders/loader-round.gif"/></div></div>
 							<div id="user-pp"><img src="css/images/default-pp.png"/></div>
 							<div class="user-pp-edit">
 								<input type="file" id="user-new-pp-i"/>
@@ -85,6 +85,5 @@ if($user->is_logged_in!=1)
 			</div>
 		</section>
 		<footer id="footer"></footer>
-		<script src="js/profile-edit.js"></script>
 	</body>
 </html>

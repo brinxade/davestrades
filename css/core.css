@@ -7,8 +7,8 @@ body{background:#fff;background-size:20% auto;color:#000;}
 #header .logo h1{z-index:1;vertical-align:top;text-transform:uppercase;position:relative;top:5px;margin-bottom:10px;font-family:'Titillium Web', sans-serif;font-size:62px;margin-top:0;}
 #header .logo-img{position:absolute;z-index:3;left:0;top:5px;padding:20px;}
 #header .logo-img img{position:relative;display:inline-block;vertical-align:middle;max-width:120px;height:auto;margin-right:15px;border:2px solid #45b649;border-radius:50%;padding:5px;}
-#header .logo-img .porn-btn{display:inline-block;vertical-align:middle;padding:18px 15px 15px 15px;font-family:'Spartan',sans-serif;font-size:14px;font-weight:bold;text-transform:uppercase;
-border-radius:50px;background:#45b649;transition:all 0.3s;}
+#header .logo-img .porn-btn{display:inline-block;vertical-align:middle;padding:18px 15px 15px 15px;font-family:'Spartan',sans-serif;font-size:12px;font-weight:bold;text-transform:uppercase;
+border-radius:5px;background:#45b649;transition:all 0.3s;}
 #header .logo-img .porn-btn a{display:block;}
 #header .logo-img .porn-btn:hover{background:#0c5e11;}
 #header .logo .tagline{position:relative;left:-26px;margin-top:0;display:inline-block;max-width:700px;font-size:16px;}
@@ -127,45 +127,45 @@ transition:all 0.3s;display:block;}
 
 
 /*WEBPAGE TOOLBOX */
-#toolbox-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/bg-default.jpg);background-size:cover;background-attachment:fixed;}
+#toolbox-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
 #toolbox-con .title{color:#fff;}
 
 
 
 /*WEBPAGE CLASSIC CARS */
-#classiccars-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/bg-default.jpg);background-size:cover;background-attachment:fixed;}
+#classiccars-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
 #classiccars-con .title{color:#fff;}
 
 
 
 /*WEBPAGE DAVES COOL STUFF */
-#coolstuff-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/bg-coolstuff.jpg);background-size:cover;background-attachment:fixed;}
+#coolstuff-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
 #coolstuff-con .title{color:#fff;}
 
 
-
-/*WEBPAGE TRADES AND CONTRACTORS */
-#trades-and-contractors{padding:160px 20px 100px 20px;background:url(images/backgrounds/bg-trades-b.jpg);background-size:cover;}
-#trades-and-contractors .inner{position:relative;border-radius:20px;z-index:5;}
-#trades-and-contractors .btn-big{position:relative;min-width:500px;max-width:700px;text-align:center;border-radius:0px;z-index:1;font-size:30px;
-margin:0 0 70px 0;text-transform:uppercase;color:#fff;letter-spacing:1px;font-family:'Titillium Web', sans-serif;overflow:hidden;}
-#trades-and-contractors .btn-big a{position:relative;display:block;padding:40px;background:rgba(0,0,0,0.5);transition:all 0.3s;}
-#trades-and-contractors .btn-big a:hover{background:rgba(0,0,0,0.6);}
-#trades-and-contractors .btn-big .icon{font-size:80px;display:inline-block;vertical-align:middle;margin:0 20px;}
-#trades-and-contractors .btn-big .data{display:inline-block;vertical-align:middle;margin:0 20px;width:300px;text-align:center;}
-
-.trade-contract-ui{width:100%;}
-.trade-contract-ui .main{max-width:900px;margin:120px auto;padding:20px 40px;min-height:500px;background:#45b649;border-radius:10px;}
-.trade-contract-ui .main .jumbo-caption-large{color:white;font-family: 'Montserrat',sans-serif;margin:50px 0;}
-
-.trade-contract-ui .submit{padding:18px 20px 15px 20px;background:white;color:black;outline:none;border:none;border-radius:10px;font-size:16px;
-font-weight:bold;margin:40px 0;transition:all 0.3s;cursor:pointer;}
-.trade-contract-ui .submit:hover{background:#eee;}
-
-#tc-search{padding:15px 20px;width:100%;margin-top:-10px;font-weight:bold;border-bottom-left-radius:8px;border-bottom-right-radius:8px;border:none;outline:none;background:rgba(0,0,0,0.1);color:white;font-size:20px;box-shadow:inset 0px 0px 5px -5px rgba(0,0,0,0.3);display:none;}
-#tc-search:focus{box-shadow:inset 0px 0px 25px -10px rgba(0,0,0,0.3);}
-#tc-search::placeholder{color:#ddd;}
-
+/*WEBPAGE CONTRACTORS */
+#contractors{padding:100px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;color:#666;}
+#contractors .inner{max-width:800px;min-width:300px;width:800px;border-radius:10px;border:1px solid #ccc;margin:0 auto;background:#F8F9F9;padding:25px 20px 20px 20px;}
+#contractors .title{font-size:42px;text-align:center;margin:30px 0 30px 0;font-weight:normal;font-family:'Spartan',sans-serif;}
+#contractors .intro-text{text-align:center;margin:30px 0 0 0;}
+#contractors .search{width:80%;text-align:center;margin:0 auto 40px auto;}
+#contractors-search{position:relative;z-index:2;font-size:14px;width:75%;background:#fff;border:1px solid #ccc;padding:15px;border-top-left-radius:5px;border-bottom-left-radius:5px;margin:0 -2px 0 0;}
+#contractors-search:focus{border:1px solid #888;outline:none;}
+#contractors .search-button{position:relative;z-index:1;color:#888;font-size:14px;width:25%;display:inline-block;vertical-align: top;background:#fff;border:1px solid #ccc;padding:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;margin:0 0 0 -2px;cursor:pointer;}
+#contractors .search-button:hover{background:#eee;}
+#contractors .search-button:focus{outline:none;}
+#contractors-search-result{display:none;max-width:700px;font-size:14px;margin:20px auto;background:#fff;border:1px solid #ccc;border-radius:5px;max-height:400px;overflow:auto;}
+#contractors-search-result .response-text{text-align:center;margin:30px;font-size:14px;}
+#contractors-search-result .result-item{width:100%;padding:20px;cursor:pointer;}
+#contractors-search-result .result-item:nth-child(odd){background:#E9FFEA;}
+#contractors-search-result .result-item:nth-child(odd):hover{background:#BFFFC1;}
+#contractors-search-result .result-item:nth-child(even){background:#D4FFD6;}
+#contractors-search-result .result-item:nth-child(even):hover{background:#BFFFC1;}
+#contractors-search-result .result-item .stat{display:block;margin:2px 0;margin-bottom:5px;}
+#contractors-search-result .result-item .stat .stat-name{display:inline-block;vertical-align:top;font-weight:bold;width:70px;color:#000;}
+#contractors-search-result .result-item .stat .stat-value{display:inline-block;vertical-align:top;color:#000;}
+#contractors-search-result .result-item .stat .btn-s1{background:#000;color:#fff;border-radius:3px;padding:10px;margin-top:20px;border:none;outline:none;font-weight:bold;display:block;max-width:150px;text-align:center;}
+#contractors-search-result .result-item .stat .btn-s1:hover{background:#333;}
 
 
 /* WEBPAGE Poker */

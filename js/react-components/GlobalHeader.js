@@ -39,7 +39,7 @@ class GlobalHeader extends React.Component
 			<div className="col">
 				<div className="logo-img">
 					<a href={this.props.dir_root+"index.php"}><img src={this.props.dir_root+"css/images/logo-head.png"} alt="logo"/></a>
-					<a className="porn-btn" href={this.props.porn_btn}>Porn</a>
+					<a className="porn-btn" href={this.props.porn_btn}>About Us</a>
 				</div>
 				<div className="upper" align="center">
 					<div className="left logo">
@@ -108,7 +108,6 @@ class AuthUserUI extends React.Component
 					<div className="inner">
 						<div className="auth-user-nav">
 							<a href="/profile.php"><i className="fas fa-edit"></i>Manage Profile</a>
-							<a href="#"><i className="fas fa-tasks"></i>Manage Contracts</a>
 							<a id="user-auth-logout" href="appcore/account_management/logout.php"><i className="fas fa-sign-out-alt"></i>Logout</a>
 						</div>
 					</div>
