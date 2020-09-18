@@ -1,70 +1,57 @@
-.accounts-body{color:#fff;font-family:'Titillium Web', sans-serif;background:#fff;background: linear-gradient(to right, #dce35b, #45b649);}
-
+.accounts-body{color:#fff;font-family:'Titillium Web', sans-serif;background:#fff;background:#45b649;padding:0;margin:0;}
 .acc-btn-style-1{padding:15px 45px;font-size:20px;border-radius:5px;background:#45b649;color:white;font-weight:bold;text-transform:uppercase;margin-bottom:40px;
-display:block;max-width:300px;transition:all 0.3s;}
+display:block;max-width:300px;transition:all 0.3s;cursor:pointer;}
 .acc-btn-style-1:hover{transform:scale(1.1);}
-
 .acc-btn-style-2{padding:15px 45px;font-size:20px;border-radius:5px;background:#fff;color:black;font-weight:bold;text-transform:uppercase;margin-bottom:40px;
-display:block;max-width:300px;}
-
+display:block;max-width:300px;cursor:pointer;}
 .acc-p-style-1{font-size:22px;font-weight:bold;margin-bottom:40px;}
-
 .info-span-a{border-radius:5px;padding:20px;background:#fff;max-width:220px;color:black;display:inline-block;margin-right:10px;font-size:16px;margin-bottom:10px;}
 .info-span-a .fas{color:#45b649;font-size:20px;margin-right:5px;position:relative;top:1px;}
-
 .accounts-modal-1{padding:20px;border-radius:10px;background:white;max-width:480px;margin-bottom:20px;}
 .accounts-modal-1 p{font-size:18px;color:#333;}
-
 .accounts-status-text{font-weight:bold;margin:25px 0 0 0;}
 .accounts-status-text.good{color:#0f0;}
 .accounts-status-text.bad{color:#f00;}
 .accounts-status-text.center{text-align:center;}
-
 .input-requirement{color:#999;font-size:14px;text-align:left;}
 
-#accounts-con{width:100%;color:#000;}
-#accounts-con form{}
-#accounts-con .form-btn{background:#fff;transition:all 0.2s;padding:15px;border-radius:50px;color:black;width:150px;margin:30px auto 30px auto;display:block;border:2px solid black;outline:none;font-size:14px;text-transform:uppercase;font-weight:bold;}
-#accounts-con .form-btn:hover{background:#000;color:white;}
-#accounts-con .input-field{padding:5px;}
-#accounts-con .input-field:-internal-autofill-selected {background:white;}
+.accounts-hero{position:relative;width:65%;margin-right:-4px;height:100vh;padding:20px;background:url(images/backgrounds/bg-accounts-hero.jpg);background-size:cover;display:inline-block;vertical-align:top;}
+.accounts-hero .content{width:100%;margin:0 auto;text-align:center;}
 
-#accounts-con .input-field input[type='text'],#accounts-con .input-field input[type='password']{width:100%;padding:5px 0px 5px 0px;outline:none;border:none;border-bottom:2px solid gray;font-family: 'Roboto', sans-serif;font-size:16px;font-weight:500;
+#accounts-section{position:relative;width:35%;padding:20px;height:100vh;display:inline-block;vertical-align:top;color:#000;background:white;}
+#accounts-section .response-text{/*min-height:34px;*/}
+#accounts-section .close-button{width:50px;height:50px;position:absolute;right:0;top:0;margin-top:20px;color:#666;transition:color 0.3s;}
+#accounts-section .close-button:hover{color:#333;}
+#accounts-section .close-button a{font-size:30px;}
+#accounts-section .form-btn{background:#fff;transition:all 0.2s;padding:15px;border-radius:50px;cursor:pointer;color:black;width:150px;margin:30px auto 30px auto;display:block;border:2px solid black;outline:none;font-size:14px;text-transform:uppercase;font-weight:bold;}
+#accounts-section .form-btn:hover{background:#000;color:white;}
+#accounts-section .input-field{padding:5px;}
+#accounts-section .input-field:-internal-autofill-selected {background:white;}
+#accounts-section .input-field input[type='text'],#accounts-section .input-field input[type='password']{width:100%;padding:5px 0px 5px 0px;outline:none;border:none;border-bottom:2px solid gray;font-family: 'Roboto', sans-serif;font-size:16px;font-weight:500;
 font-family:'Titillium Web', sans-serif;transition:all 0.4s;}
-#accounts-con .input-field input[type='text'],#accounts-con .input-field input[type='password']:focus{border-color:black;}
-#accounts-con .input-field label{font-size:16px;text-align:left;width:100%;display:block;font-weight:bold;color:#333;}
-#accounts-con .jumbo-caption-medium{color:#333;font-family:'Montserrat',sans-serif;letter-spacing:1px;}
+#accounts-section .input-field input[type='text']:focus,#accounts-section .input-field input[type='password']:focus{border-color:#333;}
+#accounts-section .input-field label{font-size:16px;text-align:left;width:100%;display:block;font-weight:bold;color:#333;}
+#accounts-section .jumbo-caption-medium{color:#333;font-family:'Spartan',sans-serif;letter-spacing:1px;}
+#accounts-section .inner{position:relative;height:100%;max-width:400px;margin:0 auto;}
+#accounts-section .form-style-1{width:100%;position:absolute;top:50%;transform:translateY(-50%);}
+#accounts-section .input-field:not(:last-of-type){margin:20px 0px;}
+#accounts-section .form-style-1 .input-field label{font-size:16px;text-align:left;width:100%;display:block;font-weight:bold;color:#333;}
+#accounts-section .form-style-1 .input-field select{width:100%;padding:5px 0;border:none;font-size:16px;font-family:'Titillium Web', sans-serif;outline:none;border-bottom:2px solid gray;color:gray;}
+#accounts-section .form-style-1 .input-field input[type='checkbox']{margin-right:10px;transform:scale(1.4);position:relative;top:1px;}
+#accounts-section .form-style-1 .input-field{margin:10px 0px;}
 
 
-#login{margin-bottom:50px;padding:20px;}
-#login-form{background:white;border-radius:10px;max-width:480px;margin:0 auto;padding:10px 40px;padding-bottom:30px;}
-#login .input-field:not(:last-of-type){margin:20px 0px;}
-
-
-#signup{margin-bottom:50px;padding:20px;}
-#signup-form{background:white;border-radius:10px;max-width:520px;margin:0 auto;padding:10px 40px;padding-bottom:30px;}
-#signup-form .input-field label{font-size:16px;text-align:left;width:100%;display:block;font-weight:bold;color:#333;}
-#signup-form .input-field select{width:100%;padding:5px 0;border:none;font-size:16px;font-family:'Titillium Web', sans-serif;outline:none;border-bottom:2px solid gray;color:gray;}
-#signup-form .input-field input[type='checkbox']{margin-right:10px;transform:scale(1.4);position:relative;top:1px;}
-#signup-form .input-field{margin:10px 0px;}
-
-
-#acc-activate{padding:20px;margin-bottom:100px;}
-#acc-activate .content{padding:20px;border-radius:10px;background:#fff;max-width:1000px;margin:0 auto;}
-#acc-activate .title{color:#333;font-family:'Montserrat',sans-serif;}
+.account-activation{padding:20px;margin-bottom:100px;}
+.account-activation .content{padding:20px;border-radius:10px;background:#fff;max-width:1000px;margin:0 auto;}
+.account-activation .title{color:#333;font-family:'Montserrat',sans-serif;}
 
 
 #profile-management{position:relative;padding:100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
 #profile-management .label{font-size:18px;}
 #profile-management .section:not(first-of-type){margin-bottom:30px;}
-#profile-management .inner{position:relative;padding:20px 40px;color:#fff;max-width:1000px;margin:50px auto;background:#0d0d0d;border-radius:10px;
-}
+#profile-management .inner{position:relative;padding:20px 40px;color:#fff;max-width:1000px;margin:50px auto;background:#0d0d0d;border-radius:10px;}
 #profile-management .content{padding-top:10px;padding-bottom:20px;}
 #profile-management h1{font-family: 'Montserrat',sans-serif;}
-
-#user-pp{position:relative;width:250px;height:250px;background:transparent;border-radius:10px;}
-#user-pp img{position:relative;max-width:100%;height:100%;display:block;border-radius:10px;}
-
 #profile-management .title{margin:30px 0;}
 #profile-management .stat-group{margin:30px 0;max-width:340px;}
 #profile-management .if-editable{position:relative;border-radius:10px;background:#fff;color:#000;padding:20px 20px;min-width:300px;margin-bottom:10px;}
@@ -82,14 +69,14 @@ font-family:'Titillium Web', sans-serif;transition:all 0.4s;}
 #profile-management .if-editable .span-edit:hover{cursor:pointer;background:rgba(0,0,0,0.1);}
 #profile-management .if-editable .if-edit-s1{font-family:'Lato',sans-serif;font-size:16px;color:black;margin:0 0;outline:0;border:0;background:transparent;}
 #user-desc{width:100%;font-size:16px;overflow-x:hidden;min-height:30px;height:200px;margin:0;color:black;background:transparent;font-family:'Lato',sans-serif;padding:0;border-radius:0;}
-.user-pp-edit{position:absolute;bottom:12px;left:10px;}
-.user-pp-edit .edit{width:50px;height:50px;background:rgba(0,0,0,0.2);color:white;margin-right:5px;border-radius:5px;font-weight:400;font-size:18px;outline:none;border:none;font-family:'Titillium Web', sans-serif;cursor:pointer;}
-.user-pp-edit .edit:hover{background:rgba(0,0,0,0.3);}
-
+#profile-management .user-pp-edit{position:absolute;bottom:12px;left:10px;}
+#profile-management .user-pp-edit .edit{width:50px;height:50px;background:rgba(0,0,0,0.2);color:white;margin-right:5px;border-radius:5px;font-weight:400;font-size:18px;outline:none;border:none;font-family:'Titillium Web', sans-serif;cursor:pointer;}
+#profile-management .user-pp-edit .edit:hover{background:rgba(0,0,0,0.3);}
 #profile-picture{position:relative;}
 #user-new-pp-i{visibility:hidden;height:1px;width:1px;}
-
 #profile-description{border-radius:10px;background:white;color:black;}
+#user-pp{position:relative;width:250px;height:250px;background:transparent;border-radius:10px;}
+#user-pp img{position:relative;max-width:100%;height:100%;display:block;border-radius:10px;}
 
 
 @media all and (max-width:550px)

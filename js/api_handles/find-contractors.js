@@ -16,6 +16,7 @@ $(document).ready(function(){
 		data['_q']=q;
 		data['_target']=target;
 
+		$(`.${target} .search-result`).hide();
 		$(`.${target} .loader`).show();
 
 		$.ajax({

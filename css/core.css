@@ -3,8 +3,8 @@ body{background:#fff;background-size:20% auto;color:#000;}
 
 #header{position:relative;color:#fff;background:#0d0d0d;z-index:5;background-size:20% auto;}
 #header .upper{padding:10px 20px 5px 20px;}
-#header .logo{margin-bottom:20px;position:relative;z-index:2;font-family: 'Spartan', sans-serif;}
-#header .logo h1{z-index:1;vertical-align:top;text-transform:uppercase;position:relative;top:5px;margin-bottom:10px;font-family:'Titillium Web', sans-serif;font-size:62px;margin-top:0;}
+#header .logo{margin-bottom:15px;margin-top:20px;position:relative;z-index:2;font-family: 'Spartan', sans-serif;}
+#header .logo .inner{z-index:1;vertical-align:top;position:relative;}
 #header .logo-img{position:absolute;z-index:3;left:0;top:5px;padding:20px;}
 #header .logo-img img{position:relative;display:inline-block;vertical-align:middle;max-width:120px;height:auto;margin-right:15px;border:2px solid #45b649;border-radius:50%;padding:5px;}
 #header .logo-img .porn-btn{display:inline-block;vertical-align:middle;padding:18px 15px 15px 15px;font-family:'Spartan',sans-serif;font-size:12px;font-weight:bold;text-transform:uppercase;
@@ -154,7 +154,7 @@ transition:all 0.3s;display:block;}
 .tc-search-ui .search-button{position:relative;z-index:1;color:#888;font-size:14px;width:25%;display:inline-block;vertical-align: top;background:#fff;border:1px solid #ccc;padding:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;margin:0 0 0 -2px;cursor:pointer;}
 .tc-search-ui .search-button:hover{background:#eee;}
 .tc-search-ui .search-button:focus{outline:none;}
-.tc-search-ui .search-result{display:none;max-width:700px;font-size:14px;margin:20px auto;background:#fff;border:1px solid #ccc;border-radius:5px;max-height:400px;overflow:auto;text-align:left;}
+.tc-search-ui .search-result{display:none;max-width:700px;font-size:14px;margin:20px auto 0 auto;background:#fff;border:1px solid #ccc;border-radius:5px;max-height:400px;overflow:auto;text-align:left;}
 .tc-search-ui .search-result .response-text{text-align:center;margin:30px;font-size:14px;}
 .tc-search-ui .search-result .result-item{width:100%;padding:20px;cursor:pointer;}
 .tc-search-ui .search-result .result-item:nth-child(odd){background:#E9FFEA;}
@@ -202,7 +202,7 @@ footer .footer-logo span{color:#45b649;font-size:18px;}
 .footer-items nav a{display:block;color:#AAA;padding:5px 0;font-family:'Spartan',sans-serif;font-size:16px;transition:all 0.3s;}
 .footer-items nav a:hover{color:#DDD;}
 
-footer .copyright{font-size:14px;color:#DDD;margin-top:30px;}
+footer .copyright{font-size:14px;color:#666;margin-top:80px;font-family:'Spartan',sans-serif;}
 
 
 

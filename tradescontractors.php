@@ -33,7 +33,7 @@
 					<button class="search-button">Search</button>
 					<div class="loader loader-medium loader-round-green m-center loader-hidden" style="margin:50px auto 0 auto;"></div>
 				</div>
-				<div id="contractors-search-result" class="search-result"></div>
+				<div class="search-result"></div>
 			</div>
 			<div class="inner trades">
 				<p class="intro-text nm-bottom">Muscle for hire</p>
@@ -43,7 +43,7 @@
 					<button class="search-button">Search</button>
 					<div class="loader loader-medium loader-round-green m-center loader-hidden" style="margin:50px auto 0 auto;"></div>
 				</div>
-				<div id="trades-search-result" class="search-result"></div>
+				<div class="search-result"></div>
 			</div>
 		</section>
 		<footer id="footer"></footer>

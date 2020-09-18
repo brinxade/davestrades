@@ -231,7 +231,7 @@ class User
 			}
 			else
 			{
-				gen_session_token($username);
+				return gen_session_token($username);
 			}
 		}
 		else
@@ -240,10 +240,10 @@ class User
 		}
 	}
 	
-	function is_registered($email)		//email
+	function is_registered($email)
 	{
 		$db=$this->db_connection;
-		$result=$db->execute_query("SELECT * FROM `user_accounts` WHERE `email`='".$email."'");
+		$result=$db->execute_query("SELECT * FROM `user_accounts` WHERE `email`='$email'");
 			
 		if($result->num_rows>0)
 		{	
@@ -259,44 +259,10 @@ class User
 	function add_to_newsletter_list($email)
 	{
 		$db=$this->db_connection;
-		if($result=$db->execute_query("UPDATE `user_accounts` SET  `newsletter_enable`='1' WHERE `email`='".$email."'"))
+		if($result=$db->execute_query("UPDATE `user_accounts` SET  `newsletter_enable`='1' WHERE `email`='$email'"))
 			return true;
 		else
 			return false;
-	}
-	
-	function change_password($curr_pass, $new_pass)
-	{
-		$data_dispatch=array();
-		$data_dispatch['error']=1;
-		$data_dispatch['status']="Internal Error. Contact Dev.";
-		
-		$db=$this->db_connection;
-		
-		if(isset($_SESSION['rex-admin-token']))
-		{
-			$token=$_SESSION['rex-admin-token'];
-			if($result=$db->execute_query("SELECT `password` FROM `admin_accounts` WHERE `session_token`='".$token."'"))
-			{
-				if($result->num_rows==1)
-				{
-					$row=$result->fetch_assoc();
-					if($row['password']==hash($this::$hash_algo,$curr_pass))
-					{
-						if($result_1=$db->execute_query("UPDATE `admin_accounts` SET `password`='".hash($this::$hash_algo,$new_pass)."' WHERE `session_token`='".$token."'"))
-						{
-							$data_dispatch['status']="Password changed";
-							$data_dispatch['error']=0;
-						}
-					}
-					else
-					{
-						$data_dispatch['status']="Current password is incorrect.";
-					}
-				}
-			}
-		}
-		echo json_encode($data_dispatch);
 	}
 	
 	function logout()
@@ -311,7 +277,6 @@ class User
 	{
 		if(isset($_GET['past']))
 			$url=$_GET['past'];
-		
 		header("Location: ".$url);
 	}
 	

@@ -1,29 +1,25 @@
-<!doctype html>
 <?php
+	require_once 'appcore/account_management/user.php';
+	if(session_id()=='')
+		session_start();
 
-if(session_id()=='')
-	session_start();
+	$self_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$user=new User();
 
-require_once 'appcore/account_management/user.php';
+	$user_status="<p class='response-text'></p>";
+	if(isset($_POST['login-email']) && isset($_POST['login-password']))
+		$user_status=$user->login($_POST['login-email'],$_POST['login-password']);
+	else if(isset($_POST['reg-email']))
+		$user_status=$user->register($_POST);
+	if($user->is_logged_in)
+		$user->direct_user();
 
-$self_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-$user=new User();
-if(isset($_POST['login-email']) && isset($_POST['login-password']))
-	$user_status=$user->login($_POST['login-email'],$_POST['login-password']);
-else if(isset($_POST['reg-email']))
-	$user_status=$user->register($_POST);
-
-if($user->is_logged_in)
-	$user->direct_user();
-
-//REFERRAL MESSAGE
-$ref_message="";
-if(isset($_GET['ref-msg']))
-{
-	$ref_message='<div class="shadow-soft-1 accounts-modal-1"><p>'.$_GET['ref-msg'].'</p></div>';
-}
+	//REFERRAL MESSAGE
+	$ref_message="";
+	if(isset($_GET['ref-msg']))
+		$ref_message='<div class="accounts-modal-1"><p>'.$_GET['ref-msg'].'</p></div>';
 ?>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -38,20 +34,24 @@ if(isset($_GET['ref-msg']))
 		<link rel="stylesheet" href="css/common.css" type="text/css"/>
 	</head>
 	<body class="accounts-body">
-		<header align="center" id="header-mini">
-			<a href="index.php"><h1 class="jumbo-caption-medium nm-top">DAVE&apos;S TRADES</h1></a>
-		</header>
-		<section id="accounts-con">
+		<section class="accounts-hero">
+			<div class="content vh-center">
+				<a href="/"><img class="logo-text large" src="css/images/logo-text.png"/></a>
+				<h4 class="nm-top font-wt-normal font-spartan font-lh-normal">Where The Trades Play Poker...Only in Ontario</h4>
+			</div>
+		</section>
+		<section id="accounts-section">
+			<div class="close-button"><a href="/"><i class="fas fa-times"></i></a></div>
 			<?php 
 			if(isset($_GET['login']))
 			echo '
-			<div id="login">
+			<div class="inner">
 				'.$ref_message.'
-				<form class="shadow-soft-1" id="login-form" method="POST" action="'.$self_link.'">
-					<h3 align="center" class="jumbo-caption-medium">Log In</h3>
+				<form class="form-style-1" id="login-form" method="POST" action="'.$self_link.'">
+					<h3 align="center" class="jumbo-caption-medium nm-top">Log In</h3>
 					<div class="input-field">
 						<label>Email or Username</label>
-						<input id="login-email" name="login-email" type="text" placeholder="Type your email or username"/>
+						<input id="login-email" name="login-email" type="text" placeholder="Type your email" autocomplete="off"/>
 					</div>
 					<div class="input-field">
 						<label>Password</label>
@@ -66,9 +66,10 @@ if(isset($_GET['ref-msg']))
 			</div>';
 			else if(isset($_GET['signup']))
 				echo '
-				<div id="signup">
-					<form class="shadow-soft-1" id="signup-form" method="POST" action="'.$self_link.'">
-						<h3 align="center" class="jumbo-caption-medium">Sign Up</h3>
+				<div class="inner">
+					'.$ref_message.'
+					<form class="form-style-1" method="POST" action="'.$self_link.'">
+						<h3 align="center" class="jumbo-caption-medium nm-top">Sign Up</h3>
 						<div class="input-field">
 							<label>Email</label>
 							<input id="reg-email" name="reg-email" type="text" placeholder="Type your email"/>
@@ -83,8 +84,8 @@ if(isset($_GET['ref-msg']))
 							<input id="reg-cpassword" name="reg-cpassword" type="password" placeholder="Type again"/>
 						</div>
 						<div class="input-field" align="left">
-							<div style="margin:5px 0;"><input type="checkbox" id="reg-isAgree" name="reg-isAgree" value="1"/><label class="inline">I Agree to Terms of Services</label></div>
-							<div><input type="checkbox" id="reg-newsSub" name="reg-newsSub" value="1"/><label class="inline">Subscribe to weekly newsletter</label></div>
+							<div style="margin:5px 0;"><input type="checkbox" id="reg-isAgree" name="reg-isAgree" value="1"/><label for="reg-isAgree" class="inline">I Agree to Terms of Services</label></div>
+							<div><input type="checkbox" id="reg-newsSub" name="reg-newsSub" value="1"/><label for="reg-newsSub" class="inline">Subscribe to weekly newsletter</label></div>
 						</div>
 						'.$user_status.'
 						<button class="form-btn" type="submit">Sign Up</button>
@@ -94,7 +95,7 @@ if(isset($_GET['ref-msg']))
 				else if(isset($_GET['activation']) && isset($_GET['status']))
 				{
 					$html='
-					<div id="acc-activate" align="center">
+					<div class="account-activation align="center">
 						<div class="content shadow-soft-1" align="center">';
 					if($_GET['status']=="1")
 					{
@@ -117,7 +118,6 @@ if(isset($_GET['ref-msg']))
 				}
 			?>
 		</section>
-		<footer id="footer-mini" align="center"><span class="copyright">Designed by Brinxade &copy; 2020. All Rights Reserved.</span></footer>
 		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
 	</body>
 </html>

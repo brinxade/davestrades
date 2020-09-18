@@ -43,7 +43,7 @@ class GlobalHeader extends React.Component
 				</div>
 				<div className="upper" align="center">
 					<div className="left logo">
-						<h1><a href={this.props.dir_root+"index.php"}>Dave&apos;s Trades</a></h1>
+						<div className="inner"><a href={this.props.dir_root+"index.php"}><img className="logo-text medium" src={this.props.dir_root+"css/images/logo-text.png"} alt="logo"/></a></div>
 						<p className="tagline">It&apos;s three cents a day for you cheap BASTARDS<span>Censored</span></p>
 					</div>
 					<div id="hl-buttons" className="right">
