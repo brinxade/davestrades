@@ -7,9 +7,29 @@ $(document).ready(function(){
 		$("#user-new-pp-i").click();
 	});
 
-	$("#user-new-pp-i:file").change(function(){
-			var fileName = $(this).val();
-			console.log(fileName);
+	$("#user-new-pp-i").change(function(){
+		var fd=new FormData();
+		var files = $(this)[0].files;
+		console.log("File Upload Initiate: "+files);
+		
+		if(files.length>0){
+			fd.append('fProfilePicture', files[0]);
+
+			$.ajax({
+				url: '/appcore/api_handles/dr_profile_pic_upload.php',
+				type: 'POST',
+				contentType: false,
+				processData: false,
+				data: fd,
+				success: function(response){
+					//var parsedResponse=JSON.parse(response);
+					//console.log("Status: "+parsedResponse.text);
+
+					console.log(response);
+				}
+			});
+		}
+		
 	});
 
 	//Get User Profile Data

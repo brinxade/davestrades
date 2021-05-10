@@ -1,50 +1,28 @@
-<?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/appcore/CONFIG.php';
-require_once APP_CLIENT_HANDLER;
-
-$user=new User();
-if($user->is_logged_in!=1)
-{
-	$user->direct_user('/account.php?login&past='.$_SERVER['PHP_SELF']."?".$_SERVER["QUERY_STRING"]);
-}
-?>
+<?php require_once './_common.php'; _auth_required($_SERVER['PHP_SELF']."?".$_SERVER["QUERY_STRING"]);?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-		
-		<link rel="icon" type="image/png" href="favicon.png">
 		<title>Dave's Trades - Manage Profile</title>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-		<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-		<script src="js/react-components/GlobalHeader.js" type="text/babel"></script>
-		<script src="js/react-components/GlobalFooter.js" type="text/babel"></script>
-		<script src="js/react-controller/base-controller.js" type="text/babel"></script>
-		<script src="js/common.js"></script>
-		<script src="js/api_handles/profile-edit.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="css/core.css"/>
-		<link rel="stylesheet" type="text/css" href="css/poker-app.css"/>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/accounts.css"/>
-		
-		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
+		<?php echo $_common["head"]; ?>
 	</head>
 	<body>
+
 		<header id="header"></header>
+
 		<section id="profile-management">
 			<div class="inner">
 				<h1 class="title jumbo-caption-large">Profile</h1>
 				<div class="content">
 					<div class="section">
 						<div id="profile-picture" class="inline-block v-align-top">
-							<div id="user-pp"><img src="css/images/default-pp.png"/></div>
+							<div id="user-pp">
+								<img src="css/images/default-pp.png"/>
+								<div class="vh-center loader loader-round-green"></div>
+							</div>
 							<div class="user-pp-edit">
-								<input type="file" id="user-new-pp-i"/>
+								<form id="user-pp-form" enctype="multipart/form-data">
+									<input type="file" id="user-new-pp-i" name="user-pp"/>
+								</form>
 								<button id="user-new-pp" class="edit"><i class="fas fa-pen"></i></button>
 								<button class="edit"><i class="fas fa-trash"></i></button>
 							</div>
@@ -89,6 +67,10 @@ if($user->is_logged_in!=1)
 				</div>
 			</div>
 		</section>
+
 		<footer id="footer"></footer>
+
+		<?php echo $_common["foot"]; ?>
+		<script src="./js/api_handles/profile-edit.js"></script>
 	</body>
 </html>

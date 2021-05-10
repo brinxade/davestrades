@@ -7,7 +7,7 @@ function r_getProfileData($response)
 
     $conn=new Database();
 
-    $result=$conn->execute_query("SELECT * FROM `user_profiles` WHERE `uid`=$user_id");
+    $result=$conn->execute_query("SELECT * FROM `user_profiles` WHERE `id`=$user_id");
     if($data=$result->fetch_assoc())
     {
         $response['data']=array(
@@ -29,6 +29,19 @@ function r_getProfileData($response)
     }
 
     $conn->close();
+    return $response;
+}
+
+function r_updateProfilePicture($response, $data)
+{
+    require_once APP_FILE_UPLOADER;
+
+    $user=new User();
+    $user_id=$user->user_id;
+    $data=json_decode($data);
+
+    $response['response']=$data;
+
     return $response;
 }
 
@@ -55,7 +68,7 @@ function r_updateProfileData($response, $data)
         $value=$data['value'];
 
         $conn=new Database();
-        if($conn->execute_query("UPDATE `user_profiles` SET `$target`='$value' WHERE `uid`=$user_id"))
+        if($conn->execute_query("UPDATE `user_profiles` SET `$target`='$value' WHERE `id`=$user_id"))
         {
             $response['response']="Profile Updated";
         }

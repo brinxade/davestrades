@@ -1,30 +1,39 @@
+<?php require_once './_common.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<title>Dave&apos;s Trades - Find Trades and Contractors</title>
 		
-		<link rel="icon" type="image/png" href="favicon.png">
-		<title>Dave&apos;s Trades - Find Contractors</title>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-		<script src="js/react-components/GlobalFooter.js" type="text/babel"></script>
-		<script src="js/react-components/GlobalHeader.js" type="text/babel"></script>
-		<script src="js/react-controller/base-controller.js" type="text/babel"></script>
-		<script src="js/common.js"></script>
+		<?php echo $_common['head']; ?>
 		<script src="js/api_handles/find-contractors.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="css/core.css"/>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		
-		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+
 		<header id="header"></header>
-		<section class="tc-search-ui">
+
+		
+		<div class="main-section-intro">
+			<div class="inner">
+				<div class="content-wrapper">
+					<h1 class="title">Trades and Contractors</h1>
+					<div class="content">
+						<p class="font-spartan"> 
+						This will be a Manly site for Manly men.. Unless of course your having sex with watermelons.. Needless to say, This site is all about connecting you trades with other trades , in your city or your town.. This way no one will run out of work..
+						But Mostly, just to be able to swear at all the other trades in Ontario for calling with a deuce and seven and winning.. Were playing in an online monthly poker tournament, with all the other Trades across Ontario..  Were playing for Classic Cars and Sex Dolls, Custom Golf Carts, and possibly a Giant Hulk or an Iron Man.  Could be a Truck, a boat or a bike...Who knows .... Top 10% pay..
+						And of course,  New Electronic Devices for Our Ungrateful Children... So join us. It's gonna be Nuts..
+						Or you can lead a sad pitiful life devoid of humor...
+						This Site will be very beneficial to The Contractors... I Mean Good Contractors.
+						You Contractors will be able to find any trade you need, in any city or town...
+						And your Contracting business is featured throughout your city or town.  Advertising is available after we get our boards up. Contactors are always on the lookout for someone to repair the eighty six holes that the plumbers and the electricians have to make by code. This is in their job description.. It's called Hulk Smash.. They say the damage left behind is not important...
+						I myself am getting out of the game.. I'm going to start a less stressful company.
+						EVENTUAL CONTRACTING... We will get it done.. (YAWN)  EVENTUALLY... 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<section class="tc-search-ui main-section">
 			<div class="inner contractors">
 				<p class="intro-text nm-bottom">Looking to get a job done?</p>
 				<h1 class="title">Find Contractors</h1>
@@ -46,6 +55,9 @@
 				<div class="search-result"></div>
 			</div>
 		</section>
+
 		<footer id="footer"></footer>
+
+		<?php echo $_common['foot']; ?>
 	</body>
 </html>

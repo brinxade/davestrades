@@ -22,6 +22,7 @@ DEFINE('STG_ROCKNROLL',BASE_STORAGE."rocknroll/songs/");
 //HANDLERS
 DEFINE('APP_CLIENT_HANDLER',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/account_management/user.php');
 DEFINE('APP_REQ_HANDLER',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/request_handler.php');
+DEFINE('APP_FILE_UPLOADER',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/file_uploader.php');
 
 DEFINE('RH_PROFILE_DATA',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/api_handles/rh_profiledata.php');
 DEFINE('RH_SEARCH',$_SERVER['DOCUMENT_ROOT'].'/'.APP_ROOT.'/api_handles/rh_search.php');

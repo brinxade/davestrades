@@ -45,6 +45,9 @@
 	
 	function user_activation_dispatch($email, $token)
 	{
+		if(empty($token))
+			return false;
+
 		if(dispatch_activation($email,$token))
 			return TRUE;
 	}

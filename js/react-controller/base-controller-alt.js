@@ -4,7 +4,7 @@ var dir_root="../";
 var nav_items=(
 <div>
 	<HeaderNavItem link={dir_root+"index.php"} state="" name="Home"/>
-	<HeaderNavItem link={dir_root+"tradesandcontracts.php"} state="" name="Trades And Contracts"/>
+	<HeaderNavItem link={dir_root+"tradescontractors.php"} state="" name="Trades And Contracts"/>
 	<HeaderNavItem link={dir_root+"classiccars.php"} state="" name="Classic Cars"/>
 	<HeaderNavItem link={dir_root+"davescoolstuff.php"} state="" name="Dave's Cool Stuff"/>
 	<HeaderNavItem link={dir_root+"rocknroll.php"} state="" name="Rock N' Roll"/>

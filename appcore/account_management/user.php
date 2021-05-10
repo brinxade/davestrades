@@ -75,7 +75,7 @@ class User
 		
 		$result=$db->execute_query("SELECT * FROM `user_accounts` WHERE (`username`='".$username."' OR `email`='".$username."') AND `password`='".hash($this->hash_algo,$password)."'");
 		
-		if($result->num_rows==1)
+		if(!empty($result) && $result->num_rows==1)
 		{	
 			$row=$result->fetch_assoc();
 			if($row['is_active']=="1")
@@ -84,7 +84,7 @@ class User
 				{
 					$_SESSION['user-auth-token']=$token;
 					$_SESSION['user-logged-in']=1;
-					$_SESSION['user-id']=$row['uid'];
+					$_SESSION['user-id']=$row['id'];
 					
 					$this->auth_token=$token;
 					$this->set_login_status();
@@ -192,10 +192,10 @@ class User
 		{
 			if($result->num_rows==0)
 			{
-				$result=$db->execute_query("SELECT `uid` FROM `user_accounts` WHERE `email`='".$username."'");
-				$user_id=$result->fetch_assoc()['uid'];
+				$result=$db->execute_query("SELECT `id` FROM `user_accounts` WHERE `email`='".$username."'");
+				$user_id=$result->fetch_assoc()['id'];
 				
-				if($result=$db->execute_query("INSERT INTO `user_activation_tokens`(user_id,value,issued_on,is_used) VALUES (".intval($user_id).",'".$token."','".date('Y-m-d H:i:s',time())."','0')"))
+				if($result=$db->execute_query("INSERT INTO `user_activation_tokens`(user_id,value,issued_on) VALUES (".intval($user_id).",'".$token."','".date('Y-m-d H:i:s',time())."')"))
 				{
 					return $token;
 				}
@@ -224,7 +224,7 @@ class User
 		{
 			if($result->num_rows==0)
 			{
-				if($result=$db->execute_query("UPDATE `user_accounts` SET  `session_token`='".$token."' WHERE `username`='".$username."'"))
+				if($result=$db->execute_query("UPDATE `user_accounts` SET  `session_token`='".$token."' WHERE (username='$username' OR email='$username')"))
 					return $token;
 				else
 					return FALSE;
@@ -275,8 +275,8 @@ class User
 	
 	function direct_user($url="/")
 	{
-		if(isset($_GET['past']))
-			$url=$_GET['past'];
+		if(isset($_GET['redirect']))
+			$url=$_GET['redirect'];
 		header("Location: ".$url);
 	}
 	

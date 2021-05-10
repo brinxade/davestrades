@@ -1,38 +1,26 @@
+<?php require_once './_common.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-		
-		<link rel="icon" type="image/png" href="favicon.png">
 		<title>About Dave&apos;s Trades</title>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-		<script src="js/react-components/GlobalFooter.js" type="text/babel"></script>
-		<script src="js/react-components/GlobalHeader.js" type="text/babel"></script>
+		<?php echo $_common["head"]; ?>
 		<script src="js/react-controller/base-controller-alt.js" type="text/babel"></script>
-		<script src="js/common.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/core.css"/>
 		<link rel="stylesheet" type="text/css" href="css/blog.css"/>
-		<link rel="stylesheet" type="text/css" href="css/global-styles.css"/>
 	</head>
-	<body class="body-default">
+	<body>
+
 		<header id="header"></header>
+
 		<section id="about-us">
-			<div class="inner" align="left">
-				<div style="margin:0 auto;max-width:1000px;" align="center">
-					<h2 class="bstyles-heading-a heading-small bstyles-clr-dkgreen inline-block v-align-center" style="text-align:left;">
+			<div class="inner">
+				<div style="margin:0 auto;max-width:1000px;text-align:center;">
+					<h2 class="bstyles-heading-a heading-small inline-block v-align-center" style="text-align:left;">
 						What were you looking for? Grandma gumming Grandpa, Chubby Asian lesbian midgets.
 						What kind of a filthy disgusting perverted psychopath are you...
 					</h2>
 				</div>
 
-				<h3 class="bstyles-heading-a heading-large bstyles-clr-mdgreen">WELCOME</h3>
+				<h3 class="bstyles-heading-a heading-large">WELCOME</h3>
 				<p class="bstyles-para-a font-g-small">
 					Hi Guys Im Dave,<br/><br/>
 					
@@ -61,7 +49,9 @@
 				</p>
 			</div>
 		</section>
+
 		<footer id="footer"></footer>
-		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
+
+		<?php echo $_common["foot"]; ?>
 	</body>
 </html>

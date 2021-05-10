@@ -1,4 +1,5 @@
 <?php
+	require_once './_common.php';
 	require_once 'appcore/account_management/user.php';
 	if(session_id()=='')
 		session_start();
@@ -22,24 +23,18 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-		
-		<link rel="icon" type="image/png" href="favicon.png">
 		<title>Dave's Trades Account</title>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		
-		<link rel="stylesheet" href="css/accounts.css" type="text/css"/>
-		<link rel="stylesheet" href="css/common.css" type="text/css"/>
+		<?php echo $_common["head"]; ?>
 	</head>
 	<body class="accounts-body">
+
 		<section class="accounts-hero">
 			<div class="content vh-center">
 				<a href="/"><img class="logo-text large" src="css/images/logo-text.png"/></a>
 				<h4 class="nm-top font-wt-normal font-spartan font-lh-normal">Where The Trades Play Poker...Only in Ontario</h4>
 			</div>
 		</section>
+
 		<section id="accounts-section">
 			<div class="close-button"><a href="/"><i class="fas fa-times"></i></a></div>
 			<?php 
@@ -118,6 +113,7 @@
 				}
 			?>
 		</section>
-		<script src="https://kit.fontawesome.com/6f67bd47b3.js" crossorigin="anonymous"></script>
+
+		<?php echo $_common["foot"]; ?>
 	</body>
 </html>

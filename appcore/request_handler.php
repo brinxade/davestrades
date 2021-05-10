@@ -7,7 +7,7 @@ require_once DB_HANDLER;
 if(!empty($_POST['_request']))
     $request_handler=new RequestHandler($_POST['_request']);
 else
-    echo "No request posted";
+    echo json_encode("No request posted");
 
 class RequestHandler
 {
@@ -73,6 +73,14 @@ class RequestHandler
                     $this->_response=r_updateProfileData($this->_response, $this::$_requests_['pProfileData']['data']);
                 else
                 $this->_response['response']="No changes to be made";
+                break;
+
+            case 'pProfilePicture':
+                require_once RH_PROFILE_DATA;
+                if(!is_null($this::$_requests_['pProfilePicture']['data']))
+                    $this->_response=r_updateProfilePicture($this->_response, $this::$_requests_['pProfilePicture']['data']);
+                else
+                    $this->_response['response']="No Picture Selected";
                 break;
 
             case 'gTradesContractors':

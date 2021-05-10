@@ -1,27 +1,26 @@
 body, html{margin:0;padding:0;font-family: 'Lato', sans-serif;overflow-x:hidden;}
-body{background:#fff;background-size:20% auto;color:#000;}
+body{background:#000;background-size:20% auto;color:#000;background:url(images/backgrounds/bg-poker-app.jpg);}
 
 #header{position:relative;color:#fff;background:#0d0d0d;z-index:5;background-size:20% auto;}
 #header .upper{padding:10px 20px 5px 20px;}
 #header .logo{margin-bottom:15px;margin-top:20px;position:relative;z-index:2;font-family: 'Spartan', sans-serif;}
 #header .logo .inner{z-index:1;vertical-align:top;position:relative;}
 #header .logo-img{position:absolute;z-index:3;left:0;top:5px;padding:20px;}
-#header .logo-img img{position:relative;display:inline-block;vertical-align:middle;max-width:120px;height:auto;margin-right:15px;border:2px solid #45b649;border-radius:50%;padding:5px;}
+#header .logo-img img{position:relative;display:inline-block;vertical-align:middle;max-width:120px;height:auto;margin-right:15px;border:2px solid #090;border-radius:50%;padding:5px;}
 #header .logo-img .porn-btn{display:inline-block;vertical-align:middle;padding:18px 15px 15px 15px;font-family:'Spartan',sans-serif;font-size:12px;font-weight:bold;text-transform:uppercase;
-border-radius:5px;background:#45b649;transition:all 0.3s;}
+border-radius:5px;background:#090;transition:all 0.3s;}
 #header .logo-img .porn-btn a{display:block;}
 #header .logo-img .porn-btn:hover{background:#0c5e11;}
-#header .logo .tagline{position:relative;left:-26px;margin-top:0;display:inline-block;max-width:700px;font-size:16px;}
-#header .logo .tagline span{position:absolute;right:-50px;top:-8px;display:block;background:red;border-radius:20px;padding:10px 8px 8px 8px;color:#fff;font-size:10px;
+#header .logo .tagline{position:relative;text-transform:uppercase;left:-40px;margin-top:0;margin-bottom:15px;display:inline-block;max-width:700px;font-size:26px;font-family:nemo;}
+#header .logo .tagline span{position:absolute;right:-78px;top:-8px;display:block;background:red;text-transform:uppercase;border-radius:20px;padding:10px 8px 8px 8px;color:#fff;font-size:16px;
 text-transform:uppercase;}
 #mobile-nav-trigger{position:relative;font-family: 'Spartan', sans-serif;font-weight:bold;color:white;text-transform:uppercase;padding:18px 10px 15px 10px;border:none;
-outline:none;background:#45b649;transition:all 0.3s;font-size:12px;cursor:pointer;display:none;}
+outline:none;background:#090;transition:all 0.3s;font-size:12px;cursor:pointer;display:none;}
 #mobile-nav-trigger span{width:20px;height:20px;background:url(images/icons/mobile-nav.png);background-size:100% auto;display:block;}
-#header nav{position:relative;width:100%;background:#45b649;text-transform:uppercase;font-size:12px;padding-left:20px;}
+#header nav{position:relative;width:100%;background:#090;text-transform:uppercase;font-size:12px;padding-left:20px;box-shadow:0px 0px 20px -5px rgba(0,0,0,0.5);}
 #header nav .nav-dd{display:inline-block;position:relative;}
-#header nav .nav-dd .nav-dd-trigger:hover{background:#0c5e11 !important;}
 #header nav .nav-dd:hover>.nav-dd-items{max-height:200px;}
-#header nav .nav-dd:hover> .nav-dd-trigger{background:#090 !important;}
+#header nav .nav-dd:hover> .nav-dd-trigger{background:#070 !important;}
 #header nav .nav-dd .nav-dd-items{position:absolute;top:57px;left:-3px;width:300px;max-height:0;transition:all 0.3s;overflow:hidden;}
 #header nav .nav-dd .nav-dd-items a{width:100%;text-align:left;display:block;}
 #header nav a{font-size:12px;margin-left:-3px;font-weight:bold;letter-spacing:1px;}
@@ -31,11 +30,8 @@ outline:none;background:#45b649;transition:all 0.3s;font-size:12px;cursor:pointe
 
 #header .upper .right{position:absolute;z-index:3;top:0;right:0;margin:30px 20px;}
 #header .upper .right .btn{display:inline-block;text-align:center;min-width:110px;font-family: 'Spartan', sans-serif;font-weight:bold;color:white;text-transform:uppercase;padding:18px 15px 15px 15px;border:none;
-outline:none;border-radius:5px;background:#45b649;transition:all 0.3s;font-size:12px;}
+outline:none;border-radius:5px;background:#090;transition:all 0.3s;font-size:12px;}
 #header .upper .right .btn:hover{background:#0c5e11;}
-
-
-
 
 /* Auth User Header UI */
 .auth-user-ui{padding:15px 0;}
@@ -48,18 +44,14 @@ outline:none;border-radius:5px;background:#45b649;transition:all 0.3s;font-size:
 .auth-user-ui .auth-user-nav a .fas{margin-right:15px;}
 .auth-user-ui .auth-user-nav a:hover{background:rgba(0,0,0,0.050);}
 
-
-
-
 /* Main content Homepage */
 #home-main{display:none;}
 #home-main .inner{padding-bottom:80px;}
 #member-greeting{padding:100px 20px 20px 20px;color:black;}
 #member-greeting .jumbo-caption-large{color:#080;}
 #member-greeting .subtitle-small{color:#1aac23;margin-bottom:10px;}
-
 #member-assorted{margin-top:50px;}
-#member-assorted .item{padding:40px;background:#45b649;color:white;min-width:300px;max-width:400px;width:400px;min-height:400px;max-height:400px;
+#member-assorted .item{padding:40px;background:#090;color:white;min-width:300px;max-width:400px;width:400px;min-height:400px;max-height:400px;
 display:inline-block;vertical-align:middle;margin:10px 50px;border-radius:20px;}
 #member-assorted .item .title{margin:0px 0px 10px 0px;text-align:left;font-family: 'Merriweather', serif;color:#fff;font-weight:200;}
 #member-assorted .item .sub-title{margin:0px 0px 20px 0px;text-align:left;font-family:'Titillium Web', sans-serif;letter-spacing:2px;font-weight:bold;font-size:16px;line-height:16px;}
@@ -68,10 +60,6 @@ transition:all 0.3s;display:block;}
 #member-assorted .item a:hover{background:rgba(0,0,0,0.7);}
 #member-assorted .item .content{margin-top:40px;}
 #trade-views .view-count{font-size:100px;line-height:50px;}
-
-
-
-
 
 /* Webpage Pictures */
 #sect-pictures .banner{border-bottom:5px solid #1aac23;/*box-shadow:0px 0px 100px 2px #1aac23;*/}
@@ -86,11 +74,8 @@ transition:all 0.3s;display:block;}
 
 @media (max-width: 600px) {}
 
-
-
-
 /* Webpage RockNRoll */
-#sect-rocknroll .banner{border-bottom:5px solid #45b649;box-shadow:0px 0px 100px 2px #45b649;font-size:0;}
+#sect-rocknroll .banner{border-bottom:5px solid #090;box-shadow:0px 0px 100px 2px #090;font-size:0;}
 #sect-rocknroll .banner img{max-width:100%;height:auto;}
 #sect-rocknroll .banner .content{background:url('images/section-pictures/banner.jpg');padding:100px 0;}
 #sect-rocknroll .banner h1{color:white;text-align:center;margin:0;}
@@ -105,11 +90,11 @@ transition:all 0.3s;display:block;}
 #song-search-request .song-search{margin-bottom:20px;font-family:'Titillium Web', sans-serif;}
 #song-search-request .song-request{margin-bottom:20px;font-family:'Titillium Web', sans-serif;}
 
-#song-list-con{padding:140px 20px 140px 20px;background:url(images/section-rocknroll/banner.jpg);background-size:cover;}
+#song-list-con{padding:140px 20px 140px 20px;background:url(images/section-rocknroll/banner.jpg);background-size:cover;text-align:center;}
 #song-list-con .inner{margin:0 auto;max-width:1000px;border-radius:10px;background:rgba(255,255,255,0.2);padding:20px;}
 #song-list{margin:70px 0 3px 0;overflow:hidden;border-radius:7px;width:100%;}
 #song-list, #song-list th, #song-list td {border-collapse: collapse;text-align:left;padding:20px;}
-#song-list .column-names{background:#45b649 !important;}
+#song-list .column-names{background:#090 !important;}
 #song-list th{text-transform:uppercase;padding-top:23px;font-size:14px;color:#fff;}
 #song-list tr{color:black;}
 #song-list tr:nth-child(odd){background:rgba(255,255,255,0.8);}
@@ -121,86 +106,80 @@ transition:all 0.3s;display:block;}
 #song-list .audio-download i{font-size:30px;transition:all 0.3s;color:#444;}
 #song-list .audio-download i:hover{color:#222;}
 
-
-
-/*WEBPAGE TOOLBOX */
-#toolbox-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
-#toolbox-con .title{color:#fff;}
-
-
-
-/*WEBPAGE CLASSIC CARS */
-#classiccars-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
-#classiccars-con .title{color:#fff;}
-
-
-
-/*WEBPAGE DAVES COOL STUFF */
-#coolstuff-con{padding:50px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;}
-#coolstuff-con .title{color:#fff;}
-
+.main-section-intro{overflow:hidden;position:relative;min-height:200px;background:#0d0d0d;color:white;padding:5vw 20px 8vw 20px;}
+.main-section-intro.bg-1{background:#154360;}
+.main-section-intro.bg-2{background:#7D6608;}
+.main-section-intro.bg-3{background:#78281F;}
+.main-section-intro .inner{display:flex;align-items:center;position:relative;max-width:1000px;margin:0 auto;}
+.main-section-intro .featured-img{min-width:240px;margin-right:60px;}
+.main-section-intro .featured-img img{max-width:240px;width:100%;height:auto;}
+.main-section-intro .content-wrapper{width:100%;}
+.main-section-intro .title{font-family:bookman;font-size:72px;letter-spacing: 1px;margin:15px 0 0 0;color:#0C0;}
+.main-section-intro .main-section-intro-img img{position:absolute;right:50px;bottom:-100px;max-width:500px;height:auto;}
+.main-section-data-con {padding:100px 20px;background:#090;}
 
 /*WEBPAGE CONTRACTORS */
-.tc-search-ui{padding:100px 20px 100px 20px;background:url(images/backgrounds/seamless-dots.jpg);background-size:7% auto;color:#666;text-align: center;}
-.tc-search-ui .inner{max-width:600px;min-width:300px;width:600px;border-radius:10px;border:1px solid #ccc;margin:0 auto;background:#F8F9F9;padding:25px 20px 20px 20px;display:inline-block;vertical-align: top;margin:0 20px;}
-.tc-search-ui .title{font-size:42px;text-align:center;color:#45b649;margin:30px 0 30px 0;font-weight:normal;font-family:'Spartan',sans-serif;}
-.tc-search-ui .intro-text{text-align:center;margin:30px 0 0 0;}
+.tc-search-ui{padding:100px 20px 100px 20px;background:#090;color:#666;text-align: center;}
+.tc-search-ui .inner{max-width:600px;min-width:300px;width:600px;border-radius:10px;margin:0 auto;background:#000;padding:25px 20px 20px 20px;display:inline-block;vertical-align: top;margin:0 20px;}
+.tc-search-ui .title{font-size:42px;text-align:center;color:#0C0;margin:30px 0 30px 0;font-weight:normal;font-family:'Spartan',sans-serif;}
+.tc-search-ui .intro-text{text-align:center;margin:30px 0 0 0;color:#999;}
 .tc-search-ui .search{width:80%;text-align:center;margin:0 auto 40px auto;}
-.tc-search-ui .search-field{position:relative;z-index:2;font-size:14px;width:75%;background:#fff;border:1px solid #ccc;padding:15px;border-top-left-radius:5px;border-bottom-left-radius:5px;margin:0 -2px 0 0;}
-.tc-search-ui .search-field:focus{border:1px solid #888;outline:none;}
-.tc-search-ui .search-button{position:relative;z-index:1;color:#888;font-size:14px;width:25%;display:inline-block;vertical-align: top;background:#fff;border:1px solid #ccc;padding:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;margin:0 0 0 -2px;cursor:pointer;}
-.tc-search-ui .search-button:hover{background:#eee;}
+.tc-search-ui .search-field{position:relative;z-index:2;font-size:14px;width:75%;background:#111;border:1px solid #0C0;padding:15px;border-top-left-radius:5px;border-bottom-left-radius:5px;margin:0 -2px 0 0;color:white;}
+.tc-search-ui .search-field::placeholder{color:#999;}
+.tc-search-ui .search-field:focus{background:#222;outline:none;}
+.tc-search-ui .search-button{position:relative;z-index:1;color:#fff;font-size:14px;width:25%;display:inline-block;vertical-align: top;background:#111;border:1px solid #0C0;padding:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;margin:0 0 0 -2px;cursor:pointer;transition:all 0.2s;letter-spacing:1px;}
+.tc-search-ui .search-button:hover{background:#0C0;color:black;}
 .tc-search-ui .search-button:focus{outline:none;}
-.tc-search-ui .search-result{display:none;max-width:700px;font-size:14px;margin:20px auto 0 auto;background:#fff;border:1px solid #ccc;border-radius:5px;max-height:400px;overflow:auto;text-align:left;}
-.tc-search-ui .search-result .response-text{text-align:center;margin:30px;font-size:14px;}
-.tc-search-ui .search-result .result-item{width:100%;padding:20px;cursor:pointer;}
-.tc-search-ui .search-result .result-item:nth-child(odd){background:#E9FFEA;}
-.tc-search-ui .search-result .result-item:nth-child(even){background:#D4FFD6;}
-.tc-search-ui .search-result .result-item .stat{display:block;margin:2px 0;margin-bottom:5px;}
-.tc-search-ui .search-result .result-item .stat .stat-name{display:inline-block;vertical-align:top;font-weight:bold;width:70px;color:#000;}
-.tc-search-ui .search-result .result-item .stat .stat-value{display:inline-block;vertical-align:top;color:#000;}
-.tc-search-ui .search-result .result-item .stat .btn-s1{background:#000;color:#fff;border-radius:3px;padding:10px;margin-top:20px;border:none;outline:none;font-weight:bold;display:block;max-width:150px;text-align:center;}
-.tc-search-ui .search-result .result-item .stat .btn-s1:hover{background:#333;}
-
+.tc-search-ui .search-result{display:none;max-width:700px;font-size:14px;margin:20px auto 0 auto;background:#222;border-radius:5px;max-height:400px;overflow:auto;text-align:left;}
+.tc-search-ui .search-result:not(:last-of-type){border:1px solid #0C0;}
+.tc-search-ui .search-result .response-text{text-align:center;margin:30px;font-size:14px;color:#999;}
+.tc-search-ui .search-result .result-item{width:100%;padding:12px 15px;cursor:pointer;background:#222;}
+.tc-search-ui .search-result .result-item .stat{display:block;margin:2px 0;margin-bottom:5px;color:#fff;}
+.tc-search-ui .search-result .result-item .stat .stat-name{display:inline-block;vertical-align:top;font-weight:bold;width:70px;}
+.tc-search-ui .search-result .result-item .stat .stat-value{display:inline-block;vertical-align:top;}
+.tc-search-ui .search-result .result-item .stat .btn-s1{background:#090;color:#fff;border-radius:3px;padding:10px;margin-top:20px;border:none;outline:none;font-weight:bold;display:block;max-width:150px;text-align:center;}
+.tc-search-ui .search-result .result-item .stat .btn-s1:hover{background:#0A0;}
 
 /* WEBPAGE Poker */
-#poker-con{padding-bottom:60px;padding-top:60px;}
-#poker-con h1{color:#fff;}
-#prize-board-con{padding:40px 20px 40px 40px;}
-#player-list{padding:40px 40px 40px 20px;}
-.poker-con-inner{background:rgba(0,150,0,0.4);border-radius:10px;}
-#poker-con.inner{padding:40px;}
-
-
+#section-poker-tournament{padding:60px 20px;width:100%;color:white;}
+#section-poker-tournament .section-inner{max-width:1200px;margin:0 auto;}
+#section-poker-tournament main{border-radius:10px;background:#090;min-height:300px;overflow:hidden;}
+#section-poker-tournament main .inner{padding:20px;}
+#section-poker-tournament main .title{background:#070;color:#FFF;margin:0;padding:20px 20px;}
+#section-poker-tournament aside{padding-left:40px;}
+#section-poker-tournament .side-palette{border-radius:10px;background:#090;overflow:hidden;}
+#section-poker-tournament .side-palette .inner{padding:20px;}
+#section-poker-tournament .side-palette .btn{background:#000;color:white;}
+#section-poker-tournament .side-palette .btn:hover{background:#222;}
+#section-poker-tournament .side-palette .title{background:#070;color:#FFF;margin:0;padding:20px 20px;}
+#section-poker-tournament .side-palette:not(:last-of-type){margin-bottom: 40px;}
 
 /* Webpage About us */
-#about-us .inner{background:rgba(255,255,255,0.9);max-width:1000px;margin:120px auto;padding:40px;border-radius:10px;}
-
-
+#about-us{background:url(images/backgrounds/seamless-dots.jpg);background-size:10% auto;padding:10px 0;}
+#about-us .inner{background:#090;max-width:1000px;margin:100px auto;padding:40px;border-radius:10px;color:#fff;}
 
 /* Footer */
-footer{position:relative;width:100%;background:#0d0d0d;background-size:20% auto;color:#fff;padding:20px 20px 30px 20px;border-top:5px solid #45b649;}
+footer{position:relative;width:100%;background:#0d0d0d;background-size:20% auto;color:#fff;padding:20px 20px 30px 20px;border-top:5px solid #090;}
 footer .footer-inner{padding:0 20px;margin:0 auto;margin-bottom:50px;}
 footer .footer-inner .footer-nav p{font-size:14px;color:#aaa;}
 footer .footer-logo .logo-img{max-width:230px;height:auto;padding:20px;}
 footer .footer-logo .logo-img, footer .footer-logo .logo-text{display:inline-block;vertical-align:top;}
+footer .logo-text__company-name{margin-top:20px;}
 footer .footer-logo h3{margin-bottom:0;}
-footer .footer-logo span{color:#45b649;font-size:18px;}
+footer .footer-logo span{color:#0C0;font-size:18px;}
 
 #sub-email{padding:12px 10px 10px 10px;border:none;margin:1px 10px 15px 0;outline:none;font-family:'Spartan', sans-serif;background:rgba(255,255,255,0.1);color:#FFF;font-size:16px;}
 #sub-email::placeholder{color:#888;}
 #sub-email:focus{background:rgba(255,255,255,0.150);}
-#sub-email-btn{background:#45b649;border:none;color:white;font-size:16px;padding:10px;border:1px solid transparent;outline:none;}
+#sub-email-btn{background:#090;border:none;color:white;font-size:16px;padding:10px;border:1px solid transparent;outline:none;}
 #sub-email-btn:hover{background:#24A538;}
-#sub-status{font-size:16px;line-height:25px;color:white;margin:0;}
+#sub-status{font-size:16px;line-height:25px;color:white;margin:0;min-height:25px;}
 
-.footer-items h4{color:#45b649;margin-bottom:20px;letter-spacing:1px;}
+.footer-items .footer-items__title{color:#0C0;margin-bottom:20px;margin-top:20px;letter-spacing:1px;}
 .footer-items nav a{display:block;color:#AAA;padding:5px 0;font-family:'Spartan',sans-serif;font-size:16px;transition:all 0.3s;}
 .footer-items nav a:hover{color:#DDD;}
 
-footer .copyright{font-size:14px;color:#666;margin-top:80px;font-family:'Spartan',sans-serif;}
-
-
+footer .copyright{font-size:14px;color:#666;font-family:'Spartan',sans-serif;}
 
 /***********************************************     MEDIA QUERIES      *******************************************/
 
@@ -251,6 +230,8 @@ footer .copyright{font-size:14px;color:#666;margin-top:80px;font-family:'Spartan
 	#member-assorted{width:100%;margin-top:15px;}
 	#member-assorted .item{margin-left:0;margin-right:0;width:100%;max-width:100%;margin-bottom:30px;height:auto;min-height:auto;}
 	
+	.main-section .main-section-intro .title{font-size:42px;}
+
 	#trades-and-contractors .btn-big .icon{font-size:34px;}
 	#trades-and-contractors .btn-big .data{font-size:20px;width:200px;}
 	#trades-and-contractors .btn-big{min-width:300px;}

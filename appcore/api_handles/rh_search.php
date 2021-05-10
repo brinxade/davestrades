@@ -19,7 +19,7 @@ function r_searchContractors($response, $data)
                     'trade'=>$row['data_trade'],
                     'phone'=>$row['data_phone'],
                     'address'=>$row['data_address'],
-                    'profile_id'=>$row['uid']
+                    'profile_id'=>$row['id']
                 );
 
                 $query=explode(" ",strtolower($data['_q']));

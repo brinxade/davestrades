@@ -2,10 +2,10 @@
 require_once 'appcore/user.php';
 require_once 'appcore/_config.php';
 
-$user=get_user_object();
+// $user=get_user_object();
 
-if($user->is_admin!=1)
-	$user->direct_user("index.php");
+// if($user->is_admin!=1)
+// 	$user->direct_user("index.php");
 
 $cms_sections='';
 
