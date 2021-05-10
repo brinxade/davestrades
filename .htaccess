@@ -1,5 +1,5 @@
 SetEnv APP_ROOT_PATH /
-DirectoryIndex site-down.html
+#DirectoryIndex site-down.html
 #RewriteEngine On
 #RewriteCond %{HTTPS} off
 #RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}
