@@ -31,7 +31,7 @@
                             </tr>
                             <tr>
                                 <td><span>Phone</span></td>
-                                <td><span>+1 437 882 8284</span></td>
+                                <td><span>+1 123 456 7890</span></td>
                             </tr>
                             <tr>
                                 <td><span>Address</span></td>
