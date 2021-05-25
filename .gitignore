@@ -1,0 +1,4 @@
+/php/.env
+/php/composer/*
+!php/composer/composer.json
+!php/composer/composer.lock

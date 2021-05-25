@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&family=Spartan:wght@200;300;400;500;700;900&family=Titillium+Web&display=swap');
+
+*{box-sizing:border-box;}
+body, html{margin:0;padding:0;}
+body{font-family: 'Spartan', sans-serif;width:100%;min-height:100vh;overflow-x:hidden;}
+
+a{transition:color 0.2s, background-color 0.2s;color:unset;cursor:pointer;text-decoration: none;font-family: 'Roboto', sans-serif;}
+a:not(.btn):hover{color:#0A0;}
+a, p, input, button, label, span{font-size:16px;font-family: 'Titillium Web', sans-serif;}
+input:focus, button:focus, select:focus{outline:none;}
+
+img{max-width:100%;height:auto;}
+
+p{margin:0;}
+h1, h2, h3, h4, h5, h6{font-family: 'Spartan', sans-serif;margin:0;}
+h1{font-size:48px;}
+

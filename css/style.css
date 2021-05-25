@@ -1,0 +1,110 @@
+/* Header */
+#header{color:white;}
+#header > .content{display:flex;align-items:center;width:100%;padding:20px;background:#0d0d0d;}
+#header > .content > div{}
+#header .logo-img{margin-right:20px;}
+#header .logo-text{max-width:350px;display:block;margin:0 auto;}
+#header .logo-tagline{position:relative;display:inline-block;white-space:nowrap;left:-35px;margin:0 auto;font-family:'Lato',sans-serif;font-size:20px;font-style: normal;color:white;}
+#header .logo-tagline .censor{position:absolute;right:-70px;top:-4px;background:red;padding:5px;border-radius:5px;}
+#header .header-left{flex-grow:1;display:flex;align-items:center;text-align:left;}
+#header .header-mid{margin-top:-10px;flex-grow:2;text-align:center;}
+#header .header-right{flex-grow:1;text-align:right;}
+#header .header-right .btn{display:inline-block;border-radius:5px;max-width:100px;text-align:center;width:100%;margin-left:10px;}
+#site-nav{width:100%;background:#090;text-align: center;position:relative;z-index:5;box-shadow:0px 0px 20px -2px rgba(0,0,0,0.3);}
+#site-nav a{border-top:7px solid transparent;border-bottom:7px solid transparent;min-width:100px;margin-right:-5px;padding:8px 15px;color:white;text-decoration:none;display:inline-block;border-right: 1px solid #0B0;border-left: 1px solid #0B0;}
+#site-nav a:not(#site-nav-btn).active{border-bottom-color:#040;background:#070;}
+#site-nav a:hover{background:#070;}
+#site-nav a:focus{background:#060;}
+a#site-nav-btn{text-align: center;display:none;}
+
+/* Header-Responsive */
+@media screen and (max-width:1100px)
+{
+    #site-nav a{width:100%;}
+    #site-nav > .content{display:none;}
+    a#site-nav-btn{display:block;}
+}
+
+/* Accounts Area */
+.accounts{display:flex;width:100%;height:100vh;}
+.accounts > .content{background:url(/images/bg/bg-accounts.jpg);background-size:cover;display:flex;align-items:center;justify-content:center;width:100%;min-width:400px;color:white;}
+.accounts > .accounts-form{padding:40px;display:flex;align-items:center;justify-content:center;width:600px;background:white;color:black;}
+.accounts > .accounts-form > .inner{width:100%;}
+
+.forgot-password{background:white;color:black;}
+#reset-email{background:#ddd;margin-top:20px;width:100%;}
+
+/* Poker Table */
+.poker-hero .sidebar select{padding:10px;width:100%;}
+.poker-hero .chatroom-wrapper{padding:0 !important;}
+.poker-hero .chatroom{height:440px;}
+
+#poker-table{position:relative;margin:160px auto 160px auto;max-width:650px;}
+#poker-table .poker-chair{position:absolute;background:url(/images/ui/poker-chair.png);background-size:100% auto;box-shadow:inset 0px 0px 30px 7px rgba(0,0,0,0.7);min-width:80px;min-height:80px;width:90px;height:90px;border-radius:50%;}
+#poker-table .poker-chair-inner{position:relative;}
+#poker-table .poker-chair-label{position:absolute;right:0;font-size:16px;min-width:200px;color:#fff;background:#090;border-radius:5px;z-index:10;padding:4px 8px;font-family:'Titillium Web',sans-serif;}
+#poker-table .poker-chair-label .flag{border-radius:3px;position:relative;top:3px;margin-right:5px;width:35px;height:auto;}
+#poker-table .poker-chair:nth-of-type(1){top:-45px;left:55px;}/*top left*/
+#poker-table .poker-chair:nth-of-type(1) .poker-chair-label{top:-55px;left:-100%;}
+#poker-table .poker-chair:nth-of-type(2){top:-45px;right:55px;}/*top right*/
+#poker-table .poker-chair:nth-of-type(2) .poker-chair-label{top:-55px;right:-100%;}
+#poker-table .poker-chair:nth-of-type(3){bottom:15px;left:-23px;}/*bottom left*/
+#poker-table .poker-chair:nth-of-type(3) .poker-chair-label{bottom:-145px;left:30%;transform:translateX(-50%);}
+#poker-table .poker-chair:nth-of-type(4){bottom:15px;right:-23px;}/*bottom right*/
+#poker-table .poker-chair:nth-of-type(4) .poker-chair-label{bottom:-145px;left:70%;transform:translateX(-50%);}
+#poker-table .poker-chair:nth-of-type(5){top:-70px;left:50%;transform:translateX(-50%);}/*top middle*/
+#poker-table .poker-chair:nth-of-type(5) .poker-chair-label{top:-55px;left:50%;transform:translateX(-50%);}
+#poker-table .poker-chair:nth-of-type(6){bottom:-70px;left:50%;transform:translateX(-50%);}/*bottom middle*/
+#poker-table .poker-chair:nth-of-type(6) .poker-chair-label{bottom:-145px;left:50%;transform:translateX(-50%);}
+#poker-table .poker-chair:nth-of-type(7){top:40%;left:-67px;transform:translateY(-50%);}/*left*/
+#poker-table .poker-chair:nth-of-type(7) .poker-chair-label{top:-55px;left:-140%;}
+#poker-table .poker-chair:nth-of-type(8){top:40%;right:-67px;transform:translateY(-50%);}/*right*/
+#poker-table .poker-chair:nth-of-type(8) .poker-chair-label{top:-55px;right:-140%;}
+#poker-table .wrapper{position:relative;max-width:600px;max-height:400px;width:600px;height:400px;border-radius:200px;background:#666;padding:20px;}
+#poker-table .inner{position:relative;width:100%;height:100%;background-image:radial-gradient(#090,#0c5e11);border-radius:200px;box-shadow:0px 0px 30px 2px black;padding:10px;}
+#poker-table .inner-content{position:relative;width:100%;height:100%;border:1px solid #EEE;border-radius:200px;}
+#poker-table .inner-content .table-text{text-align:center;text-transform:uppercase;position:absolute;left:50%;transform:translateX(-50%) translateY(-50%);top:50%;color:rgba(255,255,255,0.4);margin:0;
+font-weight:bold;font-family: 'Montserrat', sans-serif;font-size:50px;}
+
+/* Profile Management */
+#profile{background-size:1% auto;}
+#profile .two-col-general{justify-content: space-around;}
+#profile .content{padding:20px 20px 80px 20px;margin:0 auto;}
+.profile-banner{position:relative;overflow:hidden;height:300px;}
+.profile-hero-image{width:100%;height:auto;}
+.profile-picture{position:relative;width:100%;margin-left:50px;margin-bottom:-50px;}
+.profile-picture img{position:relative;transform:translateY(-50%);width:170px;height:auto;border-radius:100% 100%;border:5px solid #0C0;overflow:hidden;background:#fff;}
+.profile-info{width:100%;border-collapse: collapse;max-width:1300px;margin:40px 0 40px 0;}
+.profile-info td{padding:20px;}
+.profile-info td:nth-of-type(1){width:170px;border-right:2px solid #0C0;}
+.profile-info td:nth-of-type(2){max-width:700px;padding-left:90px;}
+
+.profile-sidebar .palette{border:1px solid #090;}
+.profile-sidebar .palette .title{}
+
+/* Footer */
+#footer{position:relative;width:100%;background:#0d0d0d;color:#fff;padding:20px 20px 30px 20px;border-top:5px solid #0C0;}
+#footer .company-info{min-width:200px;}
+#footer .company-info .company-name{font-size:28px;color:#fff;margin-bottom:5px;}
+#footer .company-info .company-tagline{color:#0C0;}
+#footer .company-info .company-address{margin-top:25px;}
+#footer .content{margin:10px auto 0 auto;display:flex;width:100%;flex-wrap:wrap;align-items: stretch;justify-content:space-between;}
+#footer .footer-group{max-width:360px;min-width:160px;flex-grow:1;}
+#footer .footer-group nav a{display:block;margin-bottom:5px;color:#666;}
+#footer .footer-group nav a:hover{color:#AAA;}
+#footer .footer-group > .title{color:#0C0;font-size:24px;margin-bottom:15px;}
+
+.newsletter-sub .sub-email{border-radius:5px;background:#333;color:#FFF;margin-bottom:15px;margin-right:10px;max-width:240px;width:100%;}
+.newsletter-sub .sub-email::placeholder{color:#888;}
+.newsletter-sub .sub-email:focus{background:#444;}
+.newsletter-sub .sub-subscribe{border-radius:5px;}
+.newsletter-sub .status-text{font-size:16px;line-height:25px;color:white;margin:0;min-height:25px;}
+
+footer > .copyright{font-size:14px;color:#666;margin-top:40px;margin-bottom:10px;text-align:center;font-family:'Spartan',sans-serif;}
+
+/* Footer Responsive */
+@media screen and (max-width:700px)
+{
+    #footer .content{max-width:100%;display:block;}
+    #footer .footer-group{margin-top:25px;}
+}
